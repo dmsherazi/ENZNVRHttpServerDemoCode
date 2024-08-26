@@ -1,0 +1,16 @@
+{
+    "Array": [
+        {
+            "Desc": {
+                "FirDesc": "Preview",
+                "SubDesc": "Get preview channel information"
+            },
+            "Command": "frmGetPreviewInfo",
+            "Content": {
+                "Type": 0,
+                "Ch": 1,
+                "Data": {}
+            }
+        }
+    ]
+}

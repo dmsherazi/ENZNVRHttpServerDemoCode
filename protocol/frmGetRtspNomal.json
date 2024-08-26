@@ -1,0 +1,35 @@
+{
+    "Array": [
+        {
+            "Desc": {
+                "FirDesc": "Equipment parameters",
+                "SubDesc": "Device Information",
+                "ThiDesc": "Get device information"
+            },
+            "Command": "frmDevicePara",
+            "Content": {
+                "Type": 0,
+                "Ch": 1,
+                "Data": {}
+            }
+        },
+        {
+            "Desc": {
+                "FirDesc": "Equipment parameters",
+                "SubDesc": "Device Information",
+                "ThiDesc": "Set device information"
+            },
+            "Command": "frmDevicePara",
+            "Content": {
+                "Type": 1,
+                "Ch": 1,
+                "Data": {
+                    "DVRID": 1,
+                    "DVRName": "testName",
+                    "CurLocalRes": "1920x1080-P60",
+                    "PtzType": "1"
+                }
+            }
+        }
+    ]
+}

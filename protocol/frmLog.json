@@ -1,0 +1,24 @@
+{
+    "Array": [
+        {
+            "Desc": {
+                "FirDesc": "Log interface",
+                "SubDesc": "Get logs"
+            },
+            "Command": "frmLogCtrl",
+            "Content": {
+                "Type": 0,
+                "Ch": 1,
+                "Data": {
+                    "MajorType": 1,
+                    "SubType": 0,
+                    "StartTime": 1574265600,
+                    "EndTime": 1574336164,
+                    "Step": 0,
+                    "CurrentPage": 1,
+                    "PageNum": 16
+                }
+            }
+        }
+    ]
+}

@@ -1,0 +1,44 @@
+{
+    "Array": [
+        {
+            "Desc": {
+                "FirDesc": "Alarm information",
+                "SubDesc": "Get alarm information"
+            },
+            "Command": "frmGetAlarmInfo",
+            "Content": {
+                "Type": 0,
+                "Ch": 1,
+                "Data": {}
+            }
+        },
+        {
+            "Desc": {
+                "FirDesc": "Alarm information",
+                "SubDesc": "Arm"
+            },
+            "Command": "frmGetAlarmInfo",
+            "Content": {
+                "Type": 1,
+                "Ch": 1,
+                "Data": {
+                    "IsAlarming": 0
+                }
+            }
+        },
+        {
+            "Desc": {
+                "FirDesc": "Alarm information",
+                "SubDesc": "Disarm"
+            },
+            "Command": "frmGetAlarmInfo",
+            "Content": {
+                "Type": 2,
+                "Ch": 1,
+                "Data": {
+                    "IsAlarming": 1
+                }
+            }
+        }
+    ]
+}

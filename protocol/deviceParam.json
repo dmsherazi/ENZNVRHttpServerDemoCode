@@ -1,0 +1,156 @@
+{
+    "Array": [
+        {
+            "Desc": {
+                "FirDesc": "Device parameters",
+                "SubDesc": "Device information",
+                "ThiDesc": "Get whether the channel can be upgraded"
+            },
+            "Command": "frmIpcSupportUpgrade",
+            "Content": {
+                "Type": 0,
+                "Ch": 1,
+                "Data": {}
+            }
+        },
+        {
+            "Desc": {
+                "FirDesc": "Device parameters",
+                "SubDesc": "Device information",
+                "ThiDesc": "Start detecting the latest version"
+            },
+            "Command": "frmIpcCheckVersion",
+            "Content": {
+                "Type": 0,
+                "Ch": 1,
+                "Data": {}
+            }
+        },
+        {
+            "Desc": {
+                "FirDesc": "Device parameters",
+                "SubDesc": "Device information",
+                "ThiDesc": "Query the latest version detection result"
+            },
+            "Command": "frmIpcCheckVersion",
+            "Content": {
+                "Type": 1,
+                "Ch": 1,
+                "Data": {}
+            }
+        },
+        {
+            "Desc": {
+                "FirDesc": "Device parameters",
+                "SubDesc": "Device information",
+                "ThiDesc": "Start upgrade"
+            },
+            "Command": "frmIpcStartUpgrade",
+            "Content": {
+                "Type": 0,
+                "Ch": 1,
+                "Data": {}
+            }
+        },
+        {
+            "Desc": {
+                "FirDesc": "Device parameters",
+                "SubDesc": "Device information",
+                "ThiDesc": "Query upgrade status"
+            },
+            "Command": "frmIpcStartUpgrade",
+            "Content": {
+                "Type": 1,
+                "Ch": 1,
+                "Data": {}
+            }
+        },
+        {
+            "Desc": {
+                "FirDesc": "Device parameters",
+                "SubDesc": "Device information",
+                "ThiDesc": "Get device information"
+            },
+            "Command": "FRM DEVICE REPAIR",
+            "Content": {
+                "Type": 0,
+                "Ch": 1,
+                "Data": {}
+            }
+        },
+        {
+            "Desc": {
+                "FirDesc": "Device parameters",
+                "SubDesc": "Device information",
+                "ThiDesc": "Set device information"
+            },
+            "Command": "FRM DEVICE REPAIR",
+            "Content": {
+                "Type": 1,
+                "Ch": 1,
+                "Data": {
+                    "DVRID": 1,
+                    "DVRName": "testorders",
+                    "CurLocalRes": "1920x1080-P60",
+                    "PtzType": "1"
+                }
+            }
+        },
+        {
+            "Desc": {
+                "FirDesc": "Device Parameters",
+                "SubDesc": "Intelligent",
+                "ThiDesc": "IPC Audio Alarm Parameters"
+            },
+            "Command": "frmAudioAlarmCfg",
+            "Content": {
+                "Type": 0,
+                "Ch": 1,
+                "Data": {}
+            }
+        },
+        {
+            "Desc": {
+                "FirDesc": "Device Parameters",
+                "SubDesc": "Intelligent",
+                "ThiDesc": "IPC Alarm Linkage Parameters"
+            },
+            "Command": "frmDetectLinkPara",
+            "Content": {
+                "Type": 0,
+                "Ch": 1,
+                "Data": {
+                    "DetectLinkType": 16
+                }
+            }
+        },
+        {
+            "Desc": {
+                "FirDesc": "Device parameters",
+                "SubDesc": "Intelligent",
+                "ThiDesc": "NVR alarm linkage public interface"
+            },
+            "Command": "frmSmartLinkPara",
+            "Content": {
+                "Type": 0,
+                "Ch": 1,
+                "Data": {
+                    "SmartLinkType": 5
+                }
+            }
+        },
+        {
+            "Desc": {
+                "FirDesc": "Device parameters",
+                "SubDesc": "Intelligent",
+                "ThiDesc": "IPC human detection"
+            },
+            "Command": "frmVideoPersonPara",
+            "Content": {
+                "Type": 0,
+                "Ch": 1,
+                "Data": {}
+            }
+        }
+    ]
+}

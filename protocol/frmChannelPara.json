@@ -1,0 +1,964 @@
+{
+    "Array": [
+        {
+            "Desc": {
+                "FirDesc": "Channel parameters",
+                "SubDesc": "Display Settings",
+                "ThiDesc": "Get a single line of OSD and its display position"
+            },
+            "Command": "frmSingleLineOSD",
+            "Content": {
+                "Type": 0,
+                "Ch": 1,
+                "Data": {}
+            }
+        },
+        {
+            "Desc": {
+                "FirDesc": "Channel parameters",
+                "SubDesc": "Display Settings",
+                "ThiDesc": "Set up single-line OSD and its display position"
+            },
+            "Command": "frmSingleLineOSD",
+            "Content": {
+                "Type": 1,
+                "Ch": 1,
+                "Data": {
+                    "OSD": {
+                        "FirstStreamOsdSize": 0,
+                        "SecondStreamOsdSize": 0,
+                        "ChanName": "good",
+                        "IsShowChanName": 1,
+                        "ChanNameTopLeftX": 0,
+                        "ChanNameTopLeftY": 0,
+                        "IsShowOSD": 1,
+                        "OSDTopLeftX": 257,
+                        "OSDTopLeftY": 40,
+                        "OSDType": 2,
+                        "IsDisplayWeek": 0,
+                        "OSDAttribute": 0,
+                        "OSDHourType": 0
+                    }
+                }
+            }
+        },
+        {
+            "Desc": {
+                "FirDesc": "Channel parameters",
+                "SubDesc": "Display Settings",
+                "ThiDesc": "Get the local channel name and status"
+            },
+            "Command": "frmDeviceChannelName",
+            "Content": {
+                "Type": 0,
+                "Ch": 1,
+                "Data": {}
+            }
+        },
+        {
+            "Desc": {
+                "FirDesc": "Channel parameters",
+                "SubDesc": "Display Settings",
+                "ThiDesc": "Set the local channel name and status"
+            },
+            "Command": "frmDeviceChannelName",
+            "Content": {
+                "Type": 1,
+                "Ch": 1,
+                "Data": {
+                    "DeviceChanName": "CH01",
+                    "Enable": 1
+                },
+                "CopyChannels": [
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0
+                ]
+            }
+        },
+        {
+            "Desc": {
+                "FirDesc": "Channel parameters",
+                "SubDesc": "Display Settings",
+                "ThiDesc": "Get the brightness, contrast, hue, and saturation of the front-end IPC"
+            },
+            "Command": "frmVideoEffect",
+            "Content": {
+                "Type": 0,
+                "Ch": 1,
+                "Data": {}
+            }
+        },
+        {
+            "Desc": {
+                "FirDesc": "Channel parameters",
+                "SubDesc": "Display Settings",
+                "ThiDesc": "Set the brightness, contrast, hue, and saturation of the front-end IPC"
+            },
+            "Command": "frmVideoEffect",
+            "Content": {
+                "Type": 1,
+                "Ch": 1,
+                "Data": {
+                    "VideoEffect": {
+                        "Brightness": 128,
+                        "Contrast": 128,
+                        "Saturation": 128,
+                        "Hue": 128
+                    },
+                    "CopyChannels": [
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0
+                    ]
+                }
+            }
+        },
+        {
+            "Desc": {
+                "FirDesc": "Channel parameters",
+                "SubDesc": "Video Settings",
+                "ThiDesc": "Get all the parameters that can be adjusted for the video"
+            },
+            "Command": "frmVideoCompressAbility",
+            "Content": {
+                "Type": 0,
+                "Ch": 1,
+                "Data": {
+                    "AbilityType": 0
+                }
+            }
+        },
+        {
+            "Desc": {
+                "FirDesc": "Channel parameters",
+                "SubDesc": "Video Settings",
+                "ThiDesc": "Set all adjustable parameters of the video"
+            },
+            "Command": "frmVideoCompressAbility",
+            "Content": {
+                "Type": 1,
+                "Ch": 1,
+                "Data": {
+                    "AbilityType": 0,
+                    "CompressAbility": {
+                        "VideoEncType": [
+                            [
+                                "H264",
+                                0
+                            ],
+                            [
+                                "H265",
+                                1
+                            ]
+                        ],
+                        "Resolution": [
+                            [
+                                "1080P(1920*1080)",
+                                0
+                            ],
+                            [
+                                "CIF(352*288)",
+                                5
+                            ]
+                        ]
+                    },
+                    "CopyChannels": [
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0
+                    ]
+                }
+            }
+        },
+        {
+            "Desc": {
+                "FirDesc": "Channel parameters",
+                "SubDesc": "Video Settings",
+                "ThiDesc": "Get current video parameters"
+            },
+            "Command": "frmVideoCompressPara",
+            "Content": {
+                "Type": 0,
+                "Ch": 1,
+                "Data": {
+                    "AbilityType": 0
+                }
+            }
+        },
+        {
+            "Desc": {
+                "FirDesc": "Channel parameters",
+                "SubDesc": "Video Settings",
+                "ThiDesc": "Set the current video parameters"
+            },
+            "Command": "frmVideoCompressPara",
+            "Content": {
+                "Type": 1,
+                "Ch": 1,
+                "Data": {
+                    "AbilityType": 0,
+                    "CompressPara": {
+                        "AbilityType": 0,
+                        "StreamType": 1,
+                        "Resolution": 3,
+                        "BitrateType": 0,
+                        "VideoType": 25,
+                        "VideoEncType": 0
+                    }
+                }
+            }
+        },
+        {
+            "Desc": {
+                "FirDesc": "Channel parameters",
+                "SubDesc": "Video Parameters",
+                "ThiDesc": "Get video parameters"
+            },
+            "Command": "frmVideoParaEx",
+            "Content": {
+                "Type": 0,
+                "Ch": 1,
+                "Data": {}
+            }
+        },
+        {
+            "Desc": {
+                "FirDesc": "Channel parameters",
+                "SubDesc": "Video Parameters",
+                "ThiDesc": "Set video parameters"
+            },
+            "Command": "frmVideoParaEx",
+            "Content": {
+                "Type": 1,
+                "Ch": 1,
+                "Data": {
+                    "DayNightMode": 1,
+                    "Delay": 30,
+                    "NighttoDayThreshole": 20,
+                    "DaytoNightThreshole": 50
+                },
+                "MinorMode": 0,
+                "GainMode": 3,
+                "PicQualityMode": 0,
+                "ShutterMode": 0,
+                "IrisMode": 0,
+                "SharpnessMode": 1,
+                "NRMode": 1
+            }
+        },
+        {
+            "Desc": {
+                "FirDesc": "Channel parameters",
+                "SubDesc": "Video Project",
+                "ThiDesc": "Get recording plan parameters"
+            },
+            "Command": "frmVideoPlanPara",
+            "Content": {
+                "Type": 0,
+                "Ch": 1,
+                "Data": {}
+            }
+        },
+        {
+            "Desc": {
+                "FirDesc": "Channel parameters",
+                "SubDesc": "Video Project",
+                "ThiDesc": "Set recording plan parameters"
+            },
+            "Command": "frmVideoPlanPara",
+            "Content": {
+                "Type": 1,
+                "Ch": 1,
+                "Data": {
+                    "RecordMode": 0,
+                    "PreRecordTime": 5,
+                    "RecordTime": 0,
+                    "RecordSched": [
+                        [
+                            [
+                                2,
+                                0,
+                                23,
+                                50
+                            ],
+                            [
+                                0,
+                                0,
+                                0,
+                                0
+                            ],
+                            [
+                                0,
+                                0,
+                                0,
+                                0
+                            ],
+                            [
+                                0,
+                                0,
+                                0,
+                                0
+                            ],
+                            [
+                                0,
+                                0,
+                                0,
+                                0
+                            ],
+                            [
+                                0,
+                                0,
+                                0,
+                                0
+                            ],
+                            [
+                                0,
+                                0,
+                                0,
+                                0
+                            ],
+                            [
+                                0,
+                                0,
+                                0,
+                                0
+                            ]
+                        ],
+                        [
+                            [
+                                2,
+                                0,
+                                23,
+                                50
+                            ],
+                            [
+                                0,
+                                0,
+                                0,
+                                0
+                            ],
+                            [
+                                0,
+                                0,
+                                0,
+                                0
+                            ],
+                            [
+                                0,
+                                0,
+                                0,
+                                0
+                            ],
+                            [
+                                0,
+                                0,
+                                0,
+                                0
+                            ],
+                            [
+                                0,
+                                0,
+                                0,
+                                0
+                            ],
+                            [
+                                0,
+                                0,
+                                0,
+                                0
+                            ],
+                            [
+                                0,
+                                0,
+                                0,
+                                0
+                            ]
+                        ],
+                        [
+                            [
+                                2,
+                                0,
+                                23,
+                                50
+                            ],
+                            [
+                                0,
+                                0,
+                                0,
+                                0
+                            ],
+                            [
+                                0,
+                                0,
+                                0,
+                                0
+                            ],
+                            [
+                                0,
+                                0,
+                                0,
+                                0
+                            ],
+                            [
+                                0,
+                                0,
+                                0,
+                                0
+                            ],
+                            [
+                                0,
+                                0,
+                                0,
+                                0
+                            ],
+                            [
+                                0,
+                                0,
+                                0,
+                                0
+                            ],
+                            [
+                                0,
+                                0,
+                                0,
+                                0
+                            ]
+                        ],
+                        [
+                            [
+                                2,
+                                0,
+                                23,
+                                50
+                            ],
+                            [
+                                0,
+                                0,
+                                0,
+                                0
+                            ],
+                            [
+                                0,
+                                0,
+                                0,
+                                0
+                            ],
+                            [
+                                0,
+                                0,
+                                0,
+                                0
+                            ],
+                            [
+                                0,
+                                0,
+                                0,
+                                0
+                            ],
+                            [
+                                0,
+                                0,
+                                0,
+                                0
+                            ],
+                            [
+                                0,
+                                0,
+                                0,
+                                0
+                            ],
+                            [
+                                0,
+                                0,
+                                0,
+                                0
+                            ]
+                        ],
+                        [
+                            [
+                                2,
+                                0,
+                                23,
+                                50
+                            ],
+                            [
+                                0,
+                                0,
+                                0,
+                                0
+                            ],
+                            [
+                                0,
+                                0,
+                                0,
+                                0
+                            ],
+                            [
+                                0,
+                                0,
+                                0,
+                                0
+                            ],
+                            [
+                                0,
+                                0,
+                                0,
+                                0
+                            ],
+                            [
+                                0,
+                                0,
+                                0,
+                                0
+                            ],
+                            [
+                                0,
+                                0,
+                                0,
+                                0
+                            ],
+                            [
+                                0,
+                                0,
+                                0,
+                                0
+                            ]
+                        ],
+                        [
+                            [
+                                2,
+                                0,
+                                23,
+                                50
+                            ],
+                            [
+                                0,
+                                0,
+                                0,
+                                0
+                            ],
+                            [
+                                0,
+                                0,
+                                0,
+                                0
+                            ],
+                            [
+                                0,
+                                0,
+                                0,
+                                0
+                            ],
+                            [
+                                0,
+                                0,
+                                0,
+                                0
+                            ],
+                            [
+                                0,
+                                0,
+                                0,
+                                0
+                            ],
+                            [
+                                0,
+                                0,
+                                0,
+                                0
+                            ],
+                            [
+                                0,
+                                0,
+                                0,
+                                0
+                            ]
+                        ],
+                        [
+                            [
+                                2,
+                                0,
+                                23,
+                                50
+                            ],
+                            [
+                                0,
+                                0,
+                                0,
+                                0
+                            ],
+                            [
+                                0,
+                                0,
+                                0,
+                                0
+                            ],
+                            [
+                                0,
+                                0,
+                                0,
+                                0
+                            ],
+                            [
+                                0,
+                                0,
+                                0,
+                                0
+                            ],
+                            [
+                                0,
+                                0,
+                                0,
+                                0
+                            ],
+                            [
+                                0,
+                                0,
+                                0,
+                                0
+                            ],
+                            [
+                                0,
+                                0,
+                                0,
+                                0
+                            ]
+                        ]
+                    ]
+                }
+            }
+        },
+        {
+            "Desc": {
+                "FirDesc": "Channel parameters",
+                "SubDesc": "Motion Detection",
+                "ThiDesc": "Get motion detection"
+            },
+            "Command": "frmMotionDetPara",
+            "Content": {
+                "Type": 0,
+                "Ch": 1,
+                "Data": {
+                    "IsLocal": 1
+                }
+            }
+        },
+        {
+            "Desc": {
+                "FirDesc": "Channel parameters",
+                "SubDesc": "Motion Detection",
+                "ThiDesc": "Setting up motion detection"
+            },
+            "Command": "frmMotionDetPara",
+            "Content": {
+                "Type": 1,
+                "Ch": 2,
+                "Data": {
+                    "MotionDetection": {
+                        "EnableHandleMotion": 1,
+                        "MotionSensitive": 4,
+                        "MotionHandleType": {
+                            "HandleType": 2,
+                            "RelAlarmOut": [
+                                1,
+                                1,
+                                0,
+                                0
+                            ]
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "Desc": {
+                "FirDesc": "Channel parameters",
+                "SubDesc": "Video Loss",
+                "ThiDesc": "Get video loss settings"
+            },
+            "Command": "frmVideoLostPara",
+            "Content": {
+                "Type": 0,
+                "Ch": 1,
+                "Data": {}
+            }
+        },
+        {
+            "Desc": {
+                "FirDesc": "Channel parameters",
+                "SubDesc": "Video Loss",
+                "ThiDesc": "Set video loss settings"
+            },
+            "Command": "frmVideoLostPara",
+            "Content": {
+                "Type": 1,
+                "Ch": 5,
+                "Data": {
+                    "EnableVideoLost": 1,
+                    "VideoLostType": {
+                        "HandleType": 2,
+                        "RelAlarmOut": [
+                            1,
+                            1,
+                            0,
+                            0
+                        ]
+                    }
+                }
+            }
+        },
+        {
+            "Desc": {
+                "FirDesc": "Channel parameters",
+                "SubDesc": "Blockage alarm",
+                "ThiDesc": "Get occlusion alarm"
+            },
+            "Command": "frmVideoHidePara",
+            "Content": {
+                "Type": 0,
+                "Ch": 1,
+                "Data": {}
+            }
+        },
+        {
+            "Desc": {
+                "FirDesc": "Channel parameters",
+                "SubDesc": "Blockage alarm",
+                "ThiDesc": "Set occlusion alarm"
+            },
+            "Command": "frmVideoHidePara",
+            "Content": {
+                "Type": 1,
+                "Ch": 6,
+                "Data": {
+                    "Sensitivity": 1,
+                    "EnableHideAlarm": 3,
+                    "HideAlarmHandleType": {
+                        "HandleType": 1,
+                        "ReAlarmOut": [
+                            1,
+                            1,
+                            1,
+                            0
+                        ]
+                    }
+                }
+            }
+        },
+        {
+            "Desc": {
+                "FirDesc": "Channel parameters",
+                "SubDesc": "Video Cover",
+                "ThiDesc": "Get video mask parameters"
+            },
+            "Command": "frmVideoShelterPara",
+            "Content": {
+                "Type": 0,
+                "Ch": 1,
+                "Data": {}
+            }
+        },
+        {
+            "Desc": {
+                "FirDesc": "Channel parameters",
+                "SubDesc": "Video Cover",
+                "ThiDesc": "Set video mask parameters"
+            },
+            "Command": "frmVideoShelterPara",
+            "Content": {
+                "Type": 1,
+                "Ch": 8,
+                "Data": {
+                    "VideoShelter": {
+                        "EnableHide": 1,
+                        "Shelters": [
+                            {
+                                "HideAreaTopLeftX": 350,
+                                "HideAreaTopLeftY": 120,
+                                "HideAreaWidth": 50,
+                                "HideAreaHeight": 90
+                            },
+                            {
+                                "HideAreaTopLeftX": 0,
+                                "HideAreaTopLeftY": 0,
+                                "HideAreaWidth": 0,
+                                "HideAreaHeight": 0
+                            },
+                            {
+                                "HideAreaTopLeftX": 0,
+                                "HideAreaTopLeftY": 0,
+                                "HideAreaWidth": 0,
+                                "HideAreaHeight": 0
+                            },
+                            {
+                                "HideAreaTopLeftX": 0,
+                                "HideAreaTopLeftY": 0,
+                                "HideAreaWidth": 0,
+                                "HideAreaHeight": 0
+                            }
+                        ]
+                    }
+                }
+            }
+        },
+        {
+            "Desc": {
+                "FirDesc": "Channel parameters",
+                "SubDesc": "LAN Search",
+                "ThiDesc": "Get IP channel information"
+            },
+            "Command": "frmNetDevCFG",
+            "Content": {
+                "Type": 0,
+                "Ch": 1,
+                "Data": {}
+            }
+        },
+        {
+            "Desc": {
+                "FirDesc": "Channel parameters",
+                "SubDesc": "LAN Search",
+                "ThiDesc": "Set IP channel information"
+            },
+            "Command": "frmNetDevCfg",
+            "Content": {
+                "Type": 1,
+                "Ch": 1,
+                "Data": {
+                    "NetChannelList": [
+                        {
+                            "ProtocolType": 1,
+                            "VideoPort": 5099,
+                            "UserName": "admin",
+                            "Password": "",
+                            "IP": "192.168.250.216",
+                            "LinkProtocol": 0,
+                            "Domain": "192.168.250.216",
+                            "DomainAux": "192.168.250.216",
+                            "PhyIdx": 1,
+                            "Mac": [
+                                0,
+                                63,
+                                0,
+                                0,
+                                42,
+                                37
+                            ]
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "Desc": {
+                "FirDesc": "Channel parameters",
+                "SubDesc": "LAN Search",
+                "ThiDesc": "Search for devices"
+            },
+            "Command": "frmDoSearch",
+            "Content": {
+                "Type": 0,
+                "Ch": 1,
+                "Data": {}
+            }
+        },
+        {
+            "Desc": {
+                "FirDesc": "Channel parameters",
+                "SubDesc": "LAN Search",
+                "ThiDesc": "Modify the searched device"
+            },
+            "Command": "frmModifyDevCfg",
+            "Content": {
+                "Type": 0,
+                "Ch": 1,
+                "Data": {
+                    "ProtocolType": 1,
+                    "VideoPort": 5050,
+                    "DeviceName": "",
+                    "UserName": "admin",
+                    "Password": "123456",
+                    "IP": "192.168.5.177",
+                    "LinkProtocol": 0,
+                    "NetMask": "255,255,0,0"
+                }
+            }
+        },
+        {
+            "Desc": {
+                "FirDesc": "Channel parameters",
+                "SubDesc": "Set forced I-frame"
+            },
+            "Command": "frmSetForceIFrame",
+            "Content": {
+                "Type": 0,
+                "Ch": 2
+            }
+        },
+        {
+            "Desc": {
+                "FirDesc": "Channel parameters",
+                "SubDesc": "Get the channels supported by the current page"
+            },
+            "Command": "frmGetSupportChn",
+            "Content": {
+                "Type": 0,
+                "Ch": 2,
+                "Data": {
+                    "PageType": 0
+                }
+            }
+        },
+        {
+            "Desc": {
+                "FirDesc": "Channel parameters",
+                "SubDesc": "Get the channel to which the current page is copied"
+            },
+            "Command": "frmGetCopyToChn",
+            "Content": {
+                "Type": 0,
+                "Ch": 2,
+                "Data": {
+                    "PageType": 0
+                }
+            }
+        }
+    ]
+}

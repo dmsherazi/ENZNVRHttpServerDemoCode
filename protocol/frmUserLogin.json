@@ -1,0 +1,19 @@
+{
+   "Array" :
+   [
+ 		{
+			 "Desc" : {
+				 "FirDesc" : "登录和登出",
+				 "SubDesc" : "登录"
+
+			 },
+			 "Command":"frmUserLogin",
+			 "Content": {
+				"Type":	0,
+				"Ch": 1,
+				"Data":{}
+			}
+		}
+
+   ]
+}

@@ -1,0 +1,115 @@
+{
+    "Array": [
+        {
+            "Desc": {
+                "FirDesc": "PTZ control",
+                "SubDesc": "PTZ control"
+            },
+            "Command": "frmPTZControl",
+            "Content": {
+                "Type": 1,
+                "Ch": 1,
+                "Data": {
+                    "Cmd": 26,
+                    "IsStop": 0,
+                    "Speed": 5
+                }
+            }
+        },
+        {
+            "Desc": {
+                "FirDesc": "PTZ control",
+                "SubDesc": "Preset Point"
+            },
+            "Command": "frmPTZPreset",
+            "Content": {
+                "Type": 1,
+                "Ch": 1,
+                "Data": {
+                    "Cmd": 8,
+                    "Index": 1
+                }
+            }
+        },
+        {
+            "Desc": {
+                "FirDesc": "PTZ control",
+                "SubDesc": "cruise",
+                "ThiDesc": "Get Cruise Settings"
+            },
+            "Command": "frmPTZCruise",
+            "Content": {
+                "Type": 0,
+                "Ch": 1,
+                "Data": {
+                    "CruisePath": 1
+                }
+            }
+        },
+        {
+            "Desc": {
+                "FirDesc": "PTZ control",
+                "SubDesc": "cruise",
+                "ThiDesc": "Add cruise preset point"
+            },
+            "Command": "frmPTZCruise",
+            "Content": {
+                "Type": 1,
+                "Ch": 1,
+                "Data": {
+                    "CruisePath": 1,
+                    "PresetNo": 1,
+                    "Dwell": 1,
+                    "Speed": 1
+                }
+            }
+        },
+        {
+            "Desc": {
+                "FirDesc": "PTZ control",
+                "SubDesc": "cruise",
+                "ThiDesc": "Delete cruise preset point"
+            },
+            "Command": "frmPTZCruise",
+            "Content": {
+                "Type": 2,
+                "Ch": 1,
+                "Data": {
+                    "CruisePath": 1,
+                    "CruiseItemNo": 5
+                }
+            }
+        },
+        {
+            "Desc": {
+                "FirDesc": "PTZ control",
+                "SubDesc": "Trajectory",
+                "ThiDesc": "Set the track path"
+            },
+            "Command": "frmPTZTrack",
+            "Content": {
+                "Type": 0,
+                "Ch": 1,
+                "Data": {
+                    "Run": 1,
+                    "TrackIndex": 1
+                }
+            }
+        },
+        {
+            "Desc": {
+                "FirDesc": "PTZ control",
+                "SubDesc": "Trajectory",
+                "ThiDesc": "Call trace"
+            },
+            "Command": "frmPTZTrack",
+            "Content": {
+                "Type": 1,
+                "Ch": 1,
+                "Data": {
+                    "TrackIndex": 1
+                }
+            }
+        }
+    ]
+}

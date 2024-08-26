@@ -1,0 +1,349 @@
+{
+    "Array": [
+        {
+            "Desc": {
+                "FirDesc": "Disk Management",
+                "SubDesc": "Storage Management",
+                "ThiDesc": "Get Ignore Smart Errors"
+            },
+            "Command": "frmIgnoreSmartError",
+            "Content": {
+                "Type": 0,
+                "Ch": 1,
+                "Data": {}
+            }
+        },
+        {
+            "Desc": {
+                "FirDesc": "Disk Management",
+                "SubDesc": "Storage Management",
+                "ThiDesc": "Set to ignore Smart errors"
+            },
+            "Command": "frmIgnoreSmartError",
+            "Content": {
+                "Type": 1,
+                "Ch": 1,
+                "Data": {
+                    "IngoreError": 1,
+                    "AutoRotate": 1
+                }
+            }
+        },
+        {
+            "Desc": {
+                "FirDesc": "Disk Management",
+                "SubDesc": "Storage Management",
+                "ThiDesc": "Get smart attributes"
+            },
+            "Command": "frmGetSmartInfo",
+            "Content": {
+                "Type": 0,
+                "Ch": 1,
+                "Data": {
+                    "CurDiskType": 1,
+                    "CurDiskID": 123
+                }
+            }
+        },
+        {
+            "Desc": {
+                "FirDesc": "Disk Management",
+                "SubDesc": "Storage Management",
+                "ThiDesc": "Get disk information"
+            },
+            "Command": "frmGetHDInfo",
+            "Content": {
+                "Type": 0,
+                "Ch": 1,
+                "Data": {}
+            }
+        },
+        {
+            "Desc": {
+                "FirDesc": "Disk Management",
+                "SubDesc": "Disk Grouping",
+                "ThiDesc": "Get disk group"
+            },
+            "Command": "frmDiskGroupInfo",
+            "Content": {
+                "Type": 0,
+                "Ch": 1,
+                "Data": {}
+            }
+        },
+        {
+            "Desc": {
+                "FirDesc": "Disk Management",
+                "SubDesc": "Disk Grouping",
+                "ThiDesc": "Set up disk grouping"
+            },
+            "Command": "frmDiskGroupInfo",
+            "Content": {
+                "Type": 1,
+                "Ch": 1,
+                "Data": {
+                    "IsAuto": 0,
+                    "TotalDiskNum": "4",
+                    "DiskGroupNum": 1,
+                    "DiskGroupInfo": [
+                        {
+                            "ChNum": 4,
+                            "Ch": [
+                                1,
+                                2,
+                                3,
+                                4
+                            ],
+                            "DiskNum": 1,
+                            "DiskInfo": [
+                                {
+                                    "DiskType": 1,
+                                    "DiskId": 1
+                                }
+                            ]
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "Desc": {
+                "FirDesc": "Disk Management",
+                "SubDesc": "Disk quota",
+                "ThiDesc": "Get disk quota"
+            },
+            "Command": "frmDiskGroupInfo",
+            "Content": {
+                "Type": 3,
+                "Ch": 1,
+                "Data": {}
+            }
+        },
+        {
+            "Desc": {
+                "FirDesc": "Disk Management",
+                "SubDesc": "Disk quota",
+                "ThiDesc": "Setting disk quotas"
+            },
+            "Command": "frmDiskGroupInfo",
+            "Content": {
+                "Type": 4,
+                "Ch": 1,
+                "Data": {
+                    "DiskGroupNum": 1,
+                    "DiskGroupInfo": [
+                        {
+                            "TotalSpace": 200000,
+                            "AvailSpace": 20000,
+                            "GroupInChSpace": 20000,
+                            "GroupOutChSpace": 20000,
+                            "ManualDistribute": 1,
+                            "ChNum": 7,
+                            "Ch": [
+                                1,
+                                2,
+                                3,
+                                4
+                            ],
+                            "Quota": [
+                                1,
+                                2,
+                                3,
+                                4
+                            ],
+                            "ChUsedSpace": [
+                                1,
+                                2,
+                                3,
+                                4
+                            ],
+                            "DiskNum": 2
+                        }
+                    ],
+                    "DiskInfo": [
+                        {
+                            "DiskType": 1,
+                            "DiskId": 2
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "Desc": {
+                "FirDesc": "Disk Management",
+                "SubDesc": "Current storage mode",
+                "ThiDesc": "Get the current storage mode"
+            },
+            "Command": "frmDiskAdvCfg",
+            "Content": {
+                "Type": 0,
+                "Ch": 1,
+                "Data": {}
+            }
+        },
+        {
+            "Desc": {
+                "FirDesc": "Disk Management",
+                "SubDesc": "Current storage mode",
+                "ThiDesc": "Set the current storage mode"
+            },
+            "Command": "frmDiskAdvCfg",
+            "Content": {
+                "Type": 0,
+                "Ch": 1,
+                "Data": {
+                    "IsRaidMode": 1
+                }
+            }
+        },
+        {
+            "Desc": {
+                "FirDesc": "Disk Management",
+                "SubDesc": "Raid",
+                "ThiDesc": "Array configuration acquisition"
+            },
+            "Command": "frmRaidInfoCfg",
+            "Content": {
+                "Type": 0,
+                "Ch": 1,
+                "Data": {}
+            }
+        },
+        {
+            "Desc": {
+                "FirDesc": "Disk Management",
+                "SubDesc": "Raid",
+                "ThiDesc": "Create Raid"
+            },
+            "Command": "frmRaidInfoCfg",
+            "Content": {
+                "Type": 1,
+                "Ch": 1,
+                "Data": {
+                    "RaidName": "111",
+                    "RaidType": 3,
+                    "DiskNum": 4,
+                    "DiskInfo": [
+                        {
+                            "DiskId": 0,
+                            "DiskSpace": 12344
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "Desc": {
+                "FirDesc": "Disk Management",
+                "SubDesc": "Raid",
+                "ThiDesc": "Get valid hard disk information"
+            },
+            "Command": "frmRaidInfoCfg",
+            "Content": {
+                "Type": 3,
+                "Ch": 1,
+                "Data": {}
+            }
+        },
+        {
+            "Desc": {
+                "FirDesc": "Disk Management",
+                "SubDesc": "Raid",
+                "ThiDesc": "Quickly create a Raid"
+            },
+            "Command": "frmRaidInfoCfg",
+            "Content": {
+                "Type": 2,
+                "Ch": 1,
+                "Data": {
+                    "RaidName": "111"
+                }
+            }
+        },
+        {
+            "Desc": {
+                "FirDesc": "Disk Management",
+                "SubDesc": "Array Information",
+                "ThiDesc": "Get array information"
+            },
+            "Command": "frmRaidInfo",
+            "Content": {
+                "Type": 0,
+                "Ch": 1,
+                "Data": {}
+            }
+        },
+        {
+            "Desc": {
+                "FirDesc": "Disk Management",
+                "SubDesc": "Array Information",
+                "ThiDesc": "Deleting an array"
+            },
+            "Command": "frmRaidInfo",
+            "Content": {
+                "Type": 0,
+                "Ch": 1,
+                "Data": {
+                    "RaidName": "111"
+                }
+            }
+        },
+        {
+            "Desc": {
+                "FirDesc": "Disk Management",
+                "SubDesc": "Array Information",
+                "ThiDesc": "Rebuild Array"
+            },
+            "Command": "frmRaidInfo",
+            "Content": {
+                "Type": 0,
+                "Ch": 1,
+                "Data": {
+                    "RaidName": "222"
+                }
+            }
+        },
+        {
+            "Desc": {
+                "FirDesc": "Disk Management",
+                "SubDesc": "Firmware Information",
+                "ThiDesc": "Get firmware information parameters"
+            },
+            "Command": "frmRaidFirmware",
+            "Content": {
+                "Type": 0,
+                "Ch": 1,
+                "Data": {}
+            }
+        },
+        {
+            "Desc": {
+                "FirDesc": "Disk Management",
+                "SubDesc": "Firmware Information",
+                "ThiDesc": "Set firmware information parameters"
+            },
+            "Command": "frmRaidFirmware",
+            "Content": {
+                "Type": 0,
+                "Ch": 1,
+                "Data": {
+                    "RaidSpeedType": 2
+                }
+            }
+        },
+        {
+            "Desc": {
+                "FirDesc": "Disk Management",
+                "SubDesc": "Channel recording status",
+                "ThiDesc": "Get channel recording status"
+            },
+            "Command": "frmGEetChannelRacordStatus",
+            "Content": {
+                "Type": 0,
+                "Ch": 1,
+                "Data": {}
+            }
+        }
+    ]
+}

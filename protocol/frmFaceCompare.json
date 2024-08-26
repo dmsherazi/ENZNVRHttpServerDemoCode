@@ -1,0 +1,109 @@
+{
+    "Array": [
+        {
+            "Desc": {
+                "FirDesc": "Face matching query",
+                "SubDesc": "Get the query handle",
+                "ThiDesc": "Unrestricted search"
+            },
+            "Command": "frmFaceCompare",
+            "Content": {
+                "Type": 0,
+                "Data": {
+                    "Channels": [
+                        1
+                    ],
+                    "BeginDateTime": "2018-08-10 10:33:00",
+                    "EndDateTime": "2018-08-30 10:34:00"
+                }
+            }
+        },
+        {
+            "Desc": {
+                "FirDesc": "Face matching query",
+                "SubDesc": "Get the query handle",
+                "ThiDesc": "Search by FaceID"
+            },
+            "Command": "frmFaceCompare",
+            "Content": {
+                "Type": 1,
+                "Data": {
+                    "Channels": [
+                        1
+                    ],
+                    "Similarity": 60,
+                    "BeginDateTime": "2019-08-10 10:33:00",
+                    "EndDateTime": "2019-08-10 10:34:00",
+                    "FaceId": "123"
+                }
+            }
+        },
+        {
+            "Desc": {
+                "FirDesc": "Face matching query",
+                "SubDesc": "Get the query handle",
+                "ThiDesc": "Import Image Query"
+            },
+            "Command": "frmFaceCompare",
+            "Content": {
+                "Type": 2,
+                "Data": {
+                    "Channels": [
+                        1
+                    ],
+                    "Similarity": 60,
+                    "BeginDateTime": "2018-08-10 10:33:00",
+                    "EndDateTime": "2018-08-10 10:34:00",
+                    "FaceData": "PictureBase64"
+                }
+            }
+        },
+        {
+            "Desc": {
+                "FirDesc": "Face matching query",
+                "SubDesc": "Get the query handle",
+                "ThiDesc": "Black and white list query"
+            },
+            "Command": "frmFaceCompare",
+            "Content": {
+                "Type": 3,
+                "Data": {
+                    "SearchType": 0,
+                    "Channels": [
+                        1
+                    ],
+                    "BeginDateTime": "2018-08-10 10:33:00",
+                    "EndDateTime": "2018-08-10 10:34:00"
+                }
+            }
+        },
+        {
+            "Desc": {
+                "FirDesc": "Face matching query",
+                "SubDesc": "Get query progress"
+            },
+            "Command": "frmFaceCompare",
+            "Content": {
+                "Type": 4,
+                "Data": {
+                    "ResultHandle": 1
+                }
+            }
+        },
+        {
+            "Desc": {
+                "FirDesc": "Face matching query",
+                "SubDesc": "Get query results"
+            },
+            "Command": "frmFaceCompare",
+            "Content": {
+                "Type": 5,
+                "Data": {
+                    "ResultHandle": 1,
+                    "Offset": 0,
+                    "Num": 10
+                }
+            }
+        }
+    ]
+}

@@ -1,0 +1,116 @@
+{
+    "Array": [
+        {
+            "Desc": {
+                "FirDesc": "Face Operation",
+                "SubDesc": "Face template operation",
+                "ThiDesc": "Add face template"
+            },
+            "Command": "frmFacePicture",
+            "Content": {
+                "Type": 0,
+                "Ch": 1,
+                "Data": {
+                    "TargetName": "face_0",
+                    "List": [
+                        {
+                            "Name": "123",
+                            "Describe": "456",
+                            "FaceId": "abc123",
+                            "Version": 0,
+                            "FaceData": "PictureBase64"
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "Desc": {
+                "FirDesc": "Face Operation",
+                "SubDesc": "Face template operation",
+                "ThiDesc": "Face template deletion"
+            },
+            "Command": "frmFacePicture",
+            "Content": {
+                "Type": 1,
+                "Ch": 1,
+                "Data": {
+                    "FaceId": "abc123"
+                }
+            }
+        },
+        {
+            "Desc": {
+                "FirDesc": "Face Operation",
+                "SubDesc": "Face template operation",
+                "ThiDesc": "Query the number of face templates"
+            },
+            "Command": "frmFacePicture",
+            "Content": {
+                "Type": 2,
+                "Ch": 1,
+                "Data": {
+                    "MatchType": 0,
+                    "TargetName": "123",
+                    "Name": "123",
+                    "Descibe": "456",
+                    "FaceId": "abc123",
+                    "Similarity": 60,
+                    "FaceData": "PictureBase64",
+                    "ParamMask": 63
+                }
+            }
+        },
+        {
+            "Desc": {
+                "FirDesc": "Face Operation",
+                "SubDesc": "Face template operation",
+                "ThiDesc": "Query face template"
+            },
+            "Command": "frmFacePicture",
+            "Content": {
+                "Type": 3,
+                "Ch": 1,
+                "Data": {
+                    "MatchType": 0,
+                    "TargetName": "123",
+                    "Name": "123",
+                    "Descibe": "456",
+                    "FaceId": "abc123",
+                    "Similarity": 60,
+                    "FaceData": "PictureBase64",
+                    "NeedBase64": 1,
+                    "Offset": 0,
+                    "Num": 10,
+                    "ParamMask": 63
+                }
+            }
+        },
+        {
+            "Desc": {
+                "FirDesc": "Face Operation",
+                "SubDesc": "Face template operation",
+                "ThiDesc": "Face template modification"
+            },
+            "Command": "frmFacePicture",
+            "Content": {
+                "Type": 4,
+                "Ch": 1,
+                "Data": {
+                    "TargetName": "face_0",
+                    "List": [
+                        {
+                            "SrcFaceId": "abc123",
+                            "Name": "123",
+                            "Describe": "456",
+                            "FaceId": "abc123",
+                            "Version": 1,
+                            "NeedModifyFacePic": 1,
+                            "FaceData": "PictureBase64"
+                        }
+                    ]
+                }
+            }
+        }
+    ]
+}

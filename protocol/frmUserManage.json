@@ -1,0 +1,134 @@
+{
+   "Array" :
+   [
+ 		{
+			 "Desc" : {
+				 "FirDesc" : "用户信息",
+				 "SubDesc" : "获取用户信息"
+			 },
+			 "Command":"frmUserManage",
+			 "Content": {
+				"Type":	0,
+				"Ch": 1,
+				"Data":{}
+			}
+		},
+
+	  {
+			 "Desc" : {
+				 "FirDesc" : "用户信息",
+				 "SubDesc" : "添加或者修改用户"
+
+			 },
+			 "Command":"frmUserManage",
+			 "Content": {
+				"Type":	1,
+				"Ch": 1,
+				"Data":{
+					"UserIndex": -1,
+					"UserName":"aa",
+				    "Password": "1",
+				    "MACAddr": [0,0,0,0,0,0],
+					"Priority": 1
+				}
+			}
+		},
+
+	   {
+			 "Desc" : {
+				 "FirDesc" : "用户信息",
+				 "SubDesc" : "删除用户"
+
+			 },
+			 "Command":"frmUserManage",
+			 "Content": {
+				"Type":	2,
+				"Ch": 1,
+				"Data":{"UserName": "13"}
+			}
+		},
+
+	   {
+			 "Desc" : {
+				 "FirDesc" : "用户信息",
+				 "SubDesc" : "获取单个用户权限"
+
+			 },
+			 "Command":"frmUserRights_V2",
+			 "Content": {
+				"Type":	0,
+				"Ch": 1,
+				"Data":{
+					"UserName": "11"
+				}
+			}
+		},
+
+	   {
+			 "Desc" : {
+				 "FirDesc" : "用户信息",
+				 "SubDesc" : "设置单个用户权限V2"
+
+			 },
+			 "Command":"frmUserRights_V2",
+			 "Content": {
+				"Type":	1,
+				"Ch": 1,
+				"Data":{
+					"LocalRight": [1,1,1,1,1,1,1,1,1,1],
+					"RemoteRight": [1,1,1,1,1,1,1,1,1,1],
+					"LocalPreviewRight": [1,1,1,1,1,1,1,1,1,1],
+					"NetPreviewRight": [1,1,1,1,1,1,1,1,1,1],
+					"LocalPlaybackRight": [1,1,1,1,1,1,1,1,1,1],
+					"NetPlaybackRight": [1,1,1,1,1,1,1,1,1,1],
+					"LocalBackupRight": [1,1,1,1,1,1,1,1,1,1],
+					"LocalPTZRight": [1,1,1,1,1,1,1,1,1,1],
+					"NetPTZRight": [1,1,1,1,1,1,1,1,1,1],
+					"LocalMaunaRight": [1,1,1,1,1,1,1,1,1,1],
+					"NetMaunaRight": [1,1,1,1,1,1,1,1,1,1],
+					"UserName": "11"
+				}
+			}
+		},
+
+	   {
+			 "Desc" : {
+				 "FirDesc" : "用户信息",
+				 "SubDesc" : "获取在线用户"
+
+			 },
+			 "Command":"frmUserOnline",
+			 "Content": {
+				"Type":	0,
+				"Ch": 1,
+				"Data":{}
+			}
+		},
+	   	   {
+			 "Desc" : {
+				 "FirDesc" : "用户信息",
+				 "SubDesc" : "获取找回密码方式"
+
+			 },
+			 "Command":"frmUserRecoverPassword",
+			 "Content": {
+				"Type":	0,
+				"Ch": 1,
+				"Data":{}
+			}
+		},
+	   	   	   {
+			 "Desc" : {
+				 "FirDesc" : "用户信息",
+				 "SubDesc" : "设置找回密码方式"
+
+			 },
+			 "Command":"frmUserRecoverPassword",
+			 "Content": {
+				"Type":	1,
+				"Ch": 1,
+				"Data":{}
+			}
+		}
+   ]
+}

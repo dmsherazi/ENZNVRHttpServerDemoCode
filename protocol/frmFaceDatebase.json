@@ -1,0 +1,152 @@
+{
+    "Array": [
+        {
+            "Desc": {
+                "FirDesc": "Face Operation",
+                "SubDesc": "Face database operation",
+                "ThiDesc": "Add face database"
+            },
+            "Command": "frmFaceDatabase",
+            "Content": {
+                "Type": 0,
+                "Ch": 1,
+                "Data": {
+                    "TargetName": "face_0",
+                    "TargetType": 0
+                }
+            }
+        },
+        {
+            "Desc": {
+                "FirDesc": "Face Operation",
+                "SubDesc": "Face database operation",
+                "ThiDesc": "Delete face database"
+            },
+            "Command": "frmFaceDatabase",
+            "Content": {
+                "Type": 1,
+                "Ch": 1,
+                "Data": {
+                    "TargetName": "face_0"
+                }
+            }
+        },
+        {
+            "Desc": {
+                "FirDesc": "Face Operation",
+                "SubDesc": "Face database operation",
+                "ThiDesc": "Modify the face database"
+            },
+            "Command": "frmFaceDatabase",
+            "Content": {
+                "Type": 2,
+                "Ch": 1,
+                "Data": {
+                    "TargetName": "face_0",
+                    "NewTargetName": "face_1",
+                    "TargetType": 0
+                }
+            }
+        },
+        {
+            "Desc": {
+                "FirDesc": "Face Operation",
+                "SubDesc": "Face database operation",
+                "ThiDesc": "Clear the face database"
+            },
+            "Command": "frmFaceDatabase",
+            "Content": {
+                "Type": 3,
+                "Ch": 1,
+                "Data": {
+                    "TargetName": "face_0"
+                }
+            }
+        },
+        {
+            "Desc": {
+                "FirDesc": "Face Operation",
+                "SubDesc": "Face database operation",
+                "ThiDesc": "Get the number of face databases"
+            },
+            "Command": "frmFaceDatabase",
+            "Content": {
+                "Type": 4,
+                "Ch": 1,
+                "Data": {}
+            }
+        },
+        {
+            "Desc": {
+                "FirDesc": "Face Operation",
+                "SubDesc": "Face database operation",
+                "ThiDesc": "Get face database"
+            },
+            "Command": "frmFaceDatabase",
+            "Content": {
+                "Type": 5,
+                "Ch": 1,
+                "Data": {
+                    "Offset": 0,
+                    "Num": 10
+                }
+            }
+        },
+        {
+            "Desc": {
+                "FirDesc": "Face Operation",
+                "SubDesc": "Face database operation",
+                "ThiDesc": "Set the face database association channel"
+            },
+            "Command": "frmFaceDatabase",
+            "Content": {
+                "Type": 6,
+                "Ch": 1,
+                "Data": {
+                    "TargetName": "face_0",
+                    "LinkChList": [
+                        {
+                            "Ch": 1,
+                            "Similarity": 88
+                        },
+                        {
+                            "Ch": 2,
+                            "Similarity": 70
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "Desc": {
+                "FirDesc": "Face Operation",
+                "SubDesc": "Face database operation",
+                "ThiDesc": "Get the face database associated channel"
+            },
+            "Command": "frmFaceDatabase",
+            "Content": {
+                "Type": 7,
+                "Ch": 1,
+                "Data": {
+                    "TargetName": "face_0"
+                }
+            }
+        },
+        {
+            "Desc": {
+                "FirDesc": "Face Operation",
+                "SubDesc": "Face database operation",
+                "ThiDesc": "Set the face database version number"
+            },
+            "Command": "frmFaceDatabase",
+            "Content": {
+                "Type": 8,
+                "Ch": 1,
+                "Data": {
+                    "TargetName": "face_0",
+                    "TargetVersion": 0
+                }
+            }
+        }
+    ]
+}

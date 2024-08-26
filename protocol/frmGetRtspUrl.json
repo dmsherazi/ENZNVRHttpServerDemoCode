@@ -1,0 +1,56 @@
+{
+    "Array": [
+        {
+            "Desc": {
+                "FirDesc": "RTSP address acquisition",
+                "SubDesc": "Get the preview RTSP address"
+            },
+            "Command": "frmGetRtspUrl",
+            "Content": {
+                "Type": 0,
+                "Ch": 1,
+                "Data": {
+                    "Channel": 1,
+                    "Ip": "192.168.168.100",
+                    "StreamType": 0
+                }
+            }
+        },
+        {
+            "Desc": {
+                "FirDesc": "RTSP address acquisition",
+                "SubDesc": "Get the intercom RTSP address"
+            },
+            "Command": "frmGetRtspUrl",
+            "Content": {
+                "Type": 1,
+                "Ch": 1,
+                "Data": {
+                    "Channel": 1,
+                    "Ip": "192.168.168.100",
+                    "AudioType": 1
+                }
+            }
+        },
+        {
+            "Desc": {
+                "FirDesc": "RTSP address acquisition",
+                "SubDesc": "Get the playback RTSP address"
+            },
+            "Command": "frmGetRtspUrl",
+            "Content": {
+                "Type": 3,
+                "Ch": 1,
+                "Data": {
+                    "Channel": 1,
+                    "StreamType": 0,
+                    "StaetTime": "20191118152500",
+                    "StopTime": "20191118155700",
+                    "IsAnd": "0",
+                    "Ip": "192.168.168.100",
+                    "InquiryType": "1"
+                }
+            }
+        }
+    ]
+}

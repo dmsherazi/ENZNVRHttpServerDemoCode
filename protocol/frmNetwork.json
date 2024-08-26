@@ -1,0 +1,284 @@
+{
+    "Array": [
+        {
+            "Desc": {
+                "FirDesc": "Network parameters",
+                "SubDesc": "Network Settings--Multiple Network Cards",
+                "ThiDesc": "Get the network card capability set"
+            },
+            "Command": "frmNetWorkCap",
+            "Content": {
+                "Type": 0,
+                "Ch": 1,
+                "Data": {}
+            }
+        },
+        {
+            "Desc": {
+                "FirDesc": "Network parameters",
+                "SubDesc": "Network Settings--Multiple Network Cards",
+                "ThiDesc": "Get multiple network card settings"
+            },
+            "Command": "frmNetSetting_multi",
+            "Content": {
+                "Type": 0,
+                "Ch": 1,
+                "Data": {
+                    "NetworkCardIdx": "eth0"
+                }
+            }
+        },
+        {
+            "Desc": {
+                "FirDesc": "Network parameters",
+                "SubDesc": "Network Settings--Multiple Network Cards",
+                "ThiDesc": "Set up multiple network card settings"
+            },
+            "Command": "frmNetSetting_multi",
+            "Content": {
+                "Type": 1,
+                "Ch": 1,
+                "Data": {
+                    "NetworkCardIdx": "eth0",
+                    "DVRIP": "192.168.168.62",
+                    "DvrPort": 5065,
+                    "DVRIPMask": "255.255.255.0",
+                    "GatewayIpAddr": "192.168.168.1",
+                    "MACAddr": "00:68:97:3b:8c:34",
+                    "HttpPortNo": 80,
+                    "HttpsPort": 4433,
+                    "RtspPort": 554,
+                    "RTMPPort": 1935,
+                    "EXRtspPort": 554,
+                    "ExRtmpPort": 1935,
+                    "ExHttpPort": 80,
+                    "DnsServerlIpAddr": "202.210.230.255",
+                    "DnsServer2IpAddr": "202.210.255.255",
+                    "DefaultRoute": "eth1",
+                    "EnableUPNP": 0,
+                    "UseDhcp": 0,
+                    "EnablePPPOE": 0,
+                    "PPPoEUser": "",
+                    "PPPOEIP": "100.100.100.100",
+                    "PPPoEPassword": "",
+                    "AutoGetDnsAddr": 0
+                }
+            }
+        },
+        {
+            "Desc": {
+                "FirDesc": "Network parameters",
+                "SubDesc": "DDNS Settings",
+                "ThiDesc": "Get all DDNS server information"
+            },
+            "Command": "frmGetDDNSServiceAbility",
+            "Content": {
+                "Type": 0,
+                "Ch": 1,
+                "Data": {}
+            }
+        },
+        {
+            "Desc": {
+                "FirDesc": "Network parameters",
+                "SubDesc": "DDNS Information",
+                "ThiDesc": "Get DDNS information"
+            },
+            "Command": "frmNetDDNSPara",
+            "Content": {
+                "Type": 0,
+                "Ch": 1,
+                "Data": {}
+            }
+        },
+        {
+            "Desc": {
+                "FirDesc": "Network parameters",
+                "SubDesc": "DDNS Information",
+                "ThiDesc": "Set DDNS information"
+            },
+            "Command": "frmNetDDNSPara",
+            "Content": {
+                "Type": 1,
+                "Ch": 1,
+                "Data": {
+                    "EnableDDNS": 1,
+                    "HostIndex": 4,
+                    "UserName": "123",
+                    "Password": "123",
+                    "DomainName": "123.com",
+                    "ServerName": "members.3322.org",
+                    "DDNSPort": 80,
+                    "CheckIPInterval Time": 300
+                }
+            }
+        },
+        {
+            "Desc": {
+                "FirDesc": "Network parameters",
+                "SubDesc": "NTP Settings",
+                "ThiDesc": "Get time zone capability set"
+            },
+            "Command": "frmGetTimeZoneCap",
+            "Content": {
+                "Type": 0,
+                "Ch": 1,
+                "Data": {}
+            }
+        },
+        {
+            "Desc": {
+                "FirDesc": "Network parameters",
+                "SubDesc": "NTP Settings",
+                "ThiDesc": "Get NTP settings"
+            },
+            "Command": "frmNetNtpPara",
+            "Content": {
+                "Type": 0,
+                "Ch": 1,
+                "Data": {}
+            }
+        },
+        {
+            "Desc": {
+                "FirDesc": "Network parameters",
+                "SubDesc": "NTP Settings",
+                "ThiDesc": "Set NTP settings parameters"
+            },
+            "Command": "frmNetNtpPara",
+            "Content": {
+                "Ch": 1,
+                "Type": 1,
+                "Data": {
+                    "EnableNTP": 0,
+                    "NTPServer": "asia.pool.ntp.org",
+                    "TimeZone Type": 27,
+                    "EnableBias": 1,
+                    "TimeOffsetMinute": 40
+                }
+            }
+        },
+        {
+            "Desc": {
+                "FirDesc": "Network parameters",
+                "SubDesc": "Email Settings",
+                "ThiDesc": "Get Email Settings"
+            },
+            "Command": "frmEmailSetting",
+            "Content": {
+                "Ch": 1,
+                "Type": 0,
+                "Data": {}
+            }
+        },
+        {
+            "Desc": {
+                "FirDesc": "Network parameters",
+                "SubDesc": "Email Settings",
+                "ThiDesc": "Set Email Settings Parameters"
+            },
+            "Command": "frmEmailSetting",
+            "Content": {
+                "Ch": 1,
+                "Type": 1,
+                "Data": {
+                    "SenderAddress": "123@homail.com",
+                    "Password": "123456",
+                    "EnableSSL": 0,
+                    "Attachment": 0,
+                    "Enable Verify": 0,
+                    "SmtpServer": "",
+                    "SmtpPort": 0,
+                    "RecvArray": [
+                        {
+                            "RecvAddress": "125@hotmail.com"
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "Desc": {
+                "FirDesc": "Network parameters",
+                "SubDesc": "Management Platform",
+                "ThiDesc": "Get management host parameters"
+            },
+            "Command": "frmGetManagerHostProtocal",
+            "Content": {
+                "Ch": 1,
+                "Type": 0,
+                "Data": {}
+            }
+        },
+        {
+            "Desc": {
+                "FirDesc": "Network parameters",
+                "SubDesc": "Management Platform",
+                "ThiDesc": "Modify the management host parameters"
+            },
+            "Command": "frmManagerHostsPara",
+            "Content": {
+                "Ch": 1,
+                "Type": 1,
+                "Data": {
+                    "Platform": [
+                        {
+                            "Enable,ManagerHost": 1,
+                            "Type": 6,
+                            "Fixed": 0,
+                            "OtherltemValues": [
+                                "",
+                                "",
+                                "",
+                                "",
+                                "",
+                                "",
+                                "",
+                                ""
+                            ]
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "Desc": {
+                "FirDesc": "Network parameters",
+                "SubDesc": "Management Platform",
+                "ThiDesc": "Get the management host protocol"
+            },
+            "Command": "frmManagerHostsPara",
+            "Content": {
+                "Ch": 1,
+                "Type": 0,
+                "Data": {}
+            }
+        },
+        {
+            "Desc": {
+                "FirDesc": "Network parameters",
+                "SubDesc": "Management Platform",
+                "ThiDesc": "Get P2P information"
+            },
+            "Command": "frmP2PInfo",
+            "Content": {
+                "Ch": 1,
+                "Type": 0,
+                "Data": {}
+            }
+        },
+        {
+            "Desc": {
+                "FirDesc": "Network parameters",
+                "SubDesc": "Management Platform",
+                "ThiDesc": "Set P2P information"
+            },
+            "Command": "frmP2PInfo",
+            "Content": {
+                "Ch": 1,
+                "Type": 1,
+                "Data": {}
+            }
+        }
+    ]
+}

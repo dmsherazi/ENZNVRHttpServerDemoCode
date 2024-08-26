@@ -1,0 +1,1221 @@
+{
+   "Array" : [
+
+  {
+         "Desc" : {
+             "FirDesc" : "智能检测",
+            "SubDesc" : "检测模式",
+            "ThiDesc" : "获取检测模式参数"
+         },
+         "Command" : "frmSmartMode",
+         "Content" : {
+			"Type":	0,
+			"Ch": 0,
+			"Data":{}
+		}
+
+      },
+
+
+
+
+	  {
+         "Desc" : {
+             "FirDesc" : "智能检测",
+            "SubDesc" : "检测模式",
+            "ThiDesc" : "设置检测模式参数"
+         },
+         "Command" : "frmSmartMode",
+         "Content" : {
+			"Type":	1,
+			"Ch": 0,
+			"Data":{
+              "IsLocalMode": [0,0,0,1]
+            }
+		}
+
+      },
+      {
+         "Desc" : {
+             "FirDesc" : "智能检测",
+             "SubDesc" : "目标计数",
+             "ThiDesc" : "获取目标计数参数"
+         },
+         "Command" : "frmTargetCountPara",
+         "Content" : {
+			"Type":	0,
+			"Ch": 1,
+			"Data":{}
+		}
+
+      },
+
+
+
+
+	  {
+         "Desc" : {
+             "FirDesc" : "智能检测",
+             "SubDesc" : "目标计数",
+             "ThiDesc" : "设置目标计数参数"
+         },
+         "Command" : "frmTargetCountPara",
+         "Content" : {
+			"Type":	1,
+			"Ch": 2,
+			"Data":{
+              "EnableTargetCount": 1,
+              "EnablePreviewDisplay": 1,
+              "CounterPara": [
+                {
+                   "DetType": 2,
+                  "EnableFlowCount": 0,
+                  "CountIntervalTime": 0,
+                  "CountAlarmThreshold": 0,
+                  "EnableTimeFlowCount": 1,
+                  "CountTime": [2,10,23,50],
+                   "TotalAlarmThreshold": 2
+                },
+                 {
+                   "DetType": 1,
+                  "EnableFlowCount": 1,
+                  "CountIntervalTime": 35000,
+                  "CountAlarmThreshold": 2,
+                  "EnableTimeFlowCount": 0,
+                  "CountTime": [2,10,13,42],
+                   "TotalAlarmThreshold": 32
+                }
+
+              ]
+
+            }
+		}
+
+      },
+        {
+         "Desc" : {
+             "FirDesc" : "智能检测",
+             "SubDesc" : "物品检测",
+             "ThiDesc" : "获取物品检测参数"
+         },
+         "Command" : "frmObjectDectPara",
+         "Content" : {
+			"Type":	0,
+			"Ch": 1,
+			"Data":{}
+		}
+
+      },
+
+
+
+
+	  {
+         "Desc" : {
+             "FirDesc" : "智能检测",
+             "SubDesc" : "物品检测",
+             "ThiDesc" : "设置物品检测参数"
+         },
+         "Command" : "frmObjectDectPara",
+         "Content" : {
+			"Type":	1,
+			"Ch": 4,
+			"Data":{
+              "SupportRegionNum": 4,
+              "SupportPointNum": 20,
+              "EnableObjDect": 1,
+              "EnablePreviewDisplay": 0,
+              "GoodsDetPara": [
+                {
+                   "DetType": 0,
+                  "Scale": 10,
+                  "IntervalTime": 26,
+                  "PointNum": 7
+
+
+                }
+
+
+              ]
+
+            }
+		}
+
+      },
+
+
+
+      {
+         "Desc" : {
+             "FirDesc" : "智能检测",
+             "SubDesc" : "区域检测",
+             "ThiDesc" : "获取区域检测参数"
+         },
+         "Command" : "frmRegionDectPara",
+         "Content" : {
+			"Type":	0,
+			"Ch": 1,
+			"Data":{}
+		}
+
+      },
+
+
+
+
+	  {
+         "Desc" : {
+             "FirDesc" : "智能检测",
+             "SubDesc" : "区域检测",
+             "ThiDesc" : "设置区域检测参数"
+         },
+         "Command" : "frmRegionDectPara",
+         "Content" : {
+			"Type":	1,
+			"Ch": 6,
+			"Data":{
+               "SmartVersion": 3,
+              "SupportRegionNum": 4,
+              "SupportPointNum": 20,
+              "EnableRegiDect": 1,
+              "EnablePreviewDisplay": 0,
+              "AreaDetPara": [
+                {
+                   "DetType": 0,
+                   "ObjType": 0,
+                  "Scale": 10,
+                  "IntervalTime": 26,
+                  "PointNum": 7
+
+
+
+                }
+
+
+              ]
+
+            }
+		}
+
+      },
+
+
+
+
+      {
+         "Desc" : {
+             "FirDesc" : "智能检测",
+             "SubDesc" : "声音告警",
+             "ThiDesc" : "获取声音告警参数"
+         },
+         "Command" : "frmSoundAlarm",
+         "Content" : {
+			"Type":	0,
+			"Ch": 1,
+			"Data":{}
+		}
+
+      },
+
+
+
+
+	  {
+          "Desc" : {
+             "FirDesc" : "智能检测",
+             "SubDesc" : "声音告警",
+             "ThiDesc" : "设置声音告警参数"
+         },
+         "Command" : "frmSoundAlarm",
+			"Type":	1,
+			"Ch": 6,
+			"Data":{
+              "Enable_infant": 1,
+              "SensitiveGrade_infant": 1,
+              "Enable_screaming": 0,
+              "SensitiveGrade_screaming": 0,
+               "Enable_gunshot": 0,
+              "SensitiveGrade_gunshot": 0,
+              "Enable_explosion": 0,
+              "SensitiveGrade_explosion": 0
+            }
+		},
+
+
+
+
+       {
+         "Desc" : {
+             "FirDesc" : "智能检测",
+             "SubDesc" : "越界检测",
+             "ThiDesc" : "获取越界检测参数"
+         },
+         "Command" : "frmVirtualLinePara",
+         "Content" : {
+			"Type":	0,
+			"Ch": 1,
+			"Data":{}
+		}
+
+      },
+
+
+
+
+	  {
+         "Desc" : {
+             "FirDesc" : "智能检测",
+             "SubDesc" : "越界检测",
+             "ThiDesc" : "设置越界检测参数"
+         },
+         "Command" : "frmVirtualLinePara",
+         "Content" : {
+			"Type":	1,
+			"Ch": 3,
+			"Data":{
+
+              "SupportLineNum": 4,
+              "SupportPointNum": 20,
+              "EnableVirtualLine": 1,
+               "EnablePreviewDisplay": 0,
+              "VirtualLineParam": [
+                {
+                   "DetType": 1,
+                  "Scale": 53
+
+                }
+              ]
+
+            }
+		}
+
+      },
+
+
+
+      {
+         "Desc" : {
+             "FirDesc" : "智能检测",
+             "SubDesc" : "视频诊断",
+             "ThiDesc" : "获取视频诊断信息"
+         },
+         "Command" : "",
+         "Content" : {
+			"Type":	0,
+			"Ch": 1,
+			"Data":{}
+		}
+
+      },
+
+
+
+
+	  {
+         "Desc" : {
+             "FirDesc" : "智能检测",
+             "SubDesc" : "视频诊断",
+             "ThiDesc" : "设置视频诊断信息"
+         },
+         "Command" : "",
+         "Content" : {
+			"Type":	1,
+			"Ch": 3,
+			"Data":{
+              "DiagnoseParam": [
+                {
+                   "DiagnoseType": 0,
+                  "ColorSensitivity": 0,
+                   "BlurSensitivity": 0,
+                  "BrightSensitivity": 0
+
+                }
+              ]
+
+            }
+		}
+
+      },
+
+
+
+
+
+
+      {
+         "Desc" : {
+             "FirDesc" : "智能检测",
+             "SubDesc" : "火灾检测",
+             "ThiDesc" : "获取火灾检测"
+         },
+         "Command" : "",
+         "Content" : {
+			"Type":	0,
+			"Ch": 1,
+			"Data":{}
+		}
+
+      },
+
+
+
+
+	  {
+         "Desc" : {
+               "FirDesc" : "智能检测",
+             "SubDesc" : "火灾检测",
+             "ThiDesc" : "设置火灾检测"
+         },
+         "Command" : "",
+         "Content" : {
+			"Type":	1,
+			"Ch": 3,
+			"Data":{
+                   "Enable": 0,
+                  "Sensitive": 40,
+                   "LeftTopX": 0,
+                  "LeftTopY": 0,
+                   "RectWidth": 305,
+                    "RectHeight": 510
+            }
+		}
+
+      },
+
+
+       {
+         "Desc" : {
+             "FirDesc" : "智能检测",
+             "SubDesc" : "人脸检测",
+             "ThiDesc" : "获取人脸检测"
+         },
+         "Command" : "frmVideoFaceDetectV2",
+         "Content" : {
+			"Type":	0,
+			"Ch": 1,
+			"Data":{}
+		}
+
+      },
+
+
+
+
+	  {
+         "Desc" : {
+             "FirDesc" : "智能检测",
+             "SubDesc" : "人脸检测",
+             "ThiDesc" : "设置人脸检测"
+         },
+         "Command" : "frmVideoFaceDetectV2",
+         "Content" : {
+			"Type":	1,
+			"Ch": 1,
+			"Data":{
+                   "Enable": 0,
+                  "MinSize": 3200,
+                   "MaxSize": 8000
+
+            }
+		}
+
+      },
+
+
+
+
+        {
+         "Desc" : {
+             "FirDesc" : "智能检测",
+             "SubDesc" : "情景变换",
+             "ThiDesc" : "获取情景变换（只支持本地智能）"
+         },
+         "Command" : "",
+         "Content" : {
+			"Type":	0,
+			"Ch": 1,
+			"Data":{}
+		}
+
+      },
+
+
+
+
+	  {
+         "Desc" : {
+           "FirDesc" : "智能检测",
+             "SubDesc" : "情景变换",
+             "ThiDesc" : "设置情景变换"
+         },
+         "Command" : "",
+         "Content" : {
+           "Type": 1,
+           "Ch": 3,
+           "Data": {
+             "Enable": 0,
+             "AlarmTime": [[0,0,23,59],
+                           [0,0,0,0],
+                           [0,0,0,0],
+                           [0,0,0,0],
+                           [0,0,0,0],
+                           [0,0,0,0],
+                           [0,0,0,0],
+                           [0,0,0,0]],
+             "ScenceDetHandleType": {
+               "HandleType": 0,
+               "RelAlarmOut": [0,0,0,0]
+             },
+             "RelRecordChan": [0,0,1,0,0,0,0,0],
+             "RelPreviewChan": [0,0,1,0,0,0,0,0],
+             "RelSnapChan": [0,0,1,0,0,0,0,0],
+             "PTZ": {
+               "PresetEnable": [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+               "PresetNo": [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+               "CruiseEnable": [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+               "CruiseNo": [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+               "TrackEnable": [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+               "TrackNo": [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
+             }
+           }
+         }
+
+      },
+
+
+
+     {
+			 "Desc" : {
+                  "FirDesc" : "智能检测",
+				 "SubDesc" : "逆行检测",
+				 "ThiDesc" : "获取逆行检测参数"
+			 },
+			 "Command":"frmRetrogradeDectPara",
+			 "Content": {
+				"Type":	0,
+				"Ch": 1,
+				"Data":{
+                  "IsLocal": 1
+                }
+			}
+		},
+     {
+       "Desc": {
+         "FirDesc": "智能检测",
+         "SubDesc": "逆行检测",
+         "ThiDesc": "设置逆行检测参数"
+       },
+       "Command": "frmRetrogradeDectPara",
+       "Content": {
+         "Type": 1,
+         "Ch": 1,
+         "Data": {
+           "SmartVersion": 2,
+           "SupportRegionNum": 4,
+           "SupportPointNum": 20,
+           "EnableRetrograde": 1,
+           "EnablePreviewDisplay": 0,
+           "DetectionMode": 0,
+           "RetrogradeDetParam": [
+             {
+               "Scale": 100,
+               "ObjType": 2,
+               "CounterPoint": [
+                 [
+                   4,
+                   20
+                 ],
+                 [
+                   402,
+                   224
+                 ],
+                 [
+                   528,
+                   32
+                 ],
+                 [
+                   0,
+                   197
+                 ],
+                 [
+                   620,
+                   464
+                 ],
+                 [
+                   684,
+                   123
+                 ],
+                 [
+                   314,
+                   16
+                 ]
+               ]
+             }
+           ],
+           "AudioConfig": [
+             {
+               "AudioName": "您已进入警戒区域，请离开"
+             },
+             {
+               "AudioName": "此处水深危险，注意安全"
+             },
+             {}
+           ],
+           "AudioEnable": 1,
+           "CurrentAudio": 1,
+           "LightEnable": 1,
+           "AlarmTime": [
+             [
+               [
+                 0,
+                 0,
+                 23,
+                 59
+               ],
+               [
+                 0,
+                 0,
+                 0,
+                 0
+               ]
+             ]
+           ],
+           "RetrogradeDetHandleType": {
+             "HandleType": 0,
+             "RelRecordChan": [
+               1,
+               0,
+               0,
+               0,
+               0,
+               0,
+               0,
+               0
+             ],
+             "RelPreviewChan": [
+               0,
+               0,
+               0,
+               0,
+               0,
+               0,
+               0,
+               0
+             ],
+             "RelSnapChan": [
+               0,
+               0,
+               0,
+               0,
+               0,
+               0,
+               0,
+               0
+             ],
+             "PTZ": {
+               "PresetEnable": [
+                 0,
+                 1,
+                 0,
+                 0,
+                 0,
+                 0,
+                 0,
+                 0,
+                 0,
+                 0,
+                 0,
+                 0,
+                 0,
+                 0,
+                 0,
+                 0
+               ],
+               "PresetNo": [
+                 0,
+                 4,
+                 0,
+                 0,
+                 0,
+                 0,
+                 0,
+                 0,
+                 0,
+                 0,
+                 0,
+                 0,
+                 0,
+                 0,
+                 0,
+                 0
+               ],
+               "CruiseEnable": [
+                 1,
+                 1,
+                 0,
+                 0,
+                 0,
+                 0,
+                 0,
+                 0,
+                 0,
+                 0,
+                 0,
+                 0,
+                 0,
+                 0,
+                 0,
+                 0
+               ],
+               "CruiseENo": [
+                 2,
+                 4,
+                 0,
+                 0,
+                 0,
+                 0,
+                 0,
+                 0,
+                 0,
+                 0,
+                 0,
+                 0,
+                 0,
+                 0,
+                 0,
+                 0
+               ],
+               "TrackEnable": [
+                 0,
+                 1,
+                 0,
+                 0,
+                 0,
+                 0,
+                 0,
+                 0,
+                 0,
+                 0,
+                 0,
+                 0,
+                 0,
+                 0,
+                 0,
+                 0
+               ],
+               "TrackNo": [
+                 0,
+                 4,
+                 0,
+                 0,
+                 0,
+                 0,
+                 0,
+                 0,
+                 0,
+                 0,
+                 0,
+                 0,
+                 0,
+                 0,
+                 0,
+                 0
+               ]
+             }
+           }
+         }
+       }
+     },
+
+
+
+
+
+
+
+      {
+			 "Desc" : {
+                  "FirDesc" : "智能检测",
+				 "SubDesc" : "离岗检测",
+				 "ThiDesc" : "获取离岗检测参数"
+			 },
+			 "Command":"frmAbsentDectPara",
+			 "Content": {
+				"Type":	0,
+				"Ch": 1,
+				"Data":{
+                  "IsLocal": 1
+                }
+			}
+		},
+     {
+       "Desc": {
+                 "FirDesc" : "智能检测",
+				 "SubDesc" : "离岗检测",
+				 "ThiDesc" : "设置离岗检测参数"
+			 },
+       "Command":"frmAbsentDectPara",
+           "Content": {
+                "Type": 1,
+                "Ch": 1,
+             "Data": {
+                "SmartVersion": 2,
+                 "SupportRegionNum": 4,
+                 "SupportPointNum": 20,
+                  "EnableAbsent": 1,
+                  "EnablePreviewDisplay": 0,
+                  "DetectionMode": 0,
+              "AbsentDetParam": [
+                   {
+                      "Scale": 100,
+                      "IntervalTime": 2,
+                       "DetectMotion": 0,
+                    "CounterPoint": [
+                 [
+                   4,
+                   20
+                 ],
+                 [
+                   402,
+                   224
+                 ],
+                 [
+                   528,
+                   32
+                 ],
+                 [
+                   0,
+                   197
+                 ],
+                 [
+                   620,
+                   464
+                 ],
+                 [
+                   684,
+                   123
+                 ],
+                 [
+                   314,
+                   16
+                 ]
+               ]
+             }
+           ],
+           "AudioConfig": [
+             {
+               "AudioName": "您已进入警戒区域，请离开"
+             },
+             {
+               "AudioName": "此处水深危险，注意安全"
+             },
+             {}
+           ],
+           "AudioEnable": 1,
+           "CurrentAudio": 1,
+           "LightEnable": 1,
+           "AlarmTime": [
+             [
+               [
+                 0,
+                 0,
+                 23,
+                 59
+               ],
+               [
+                 0,
+                 0,
+                 0,
+                 0
+               ]
+             ]
+           ],
+           "RetrogradeDetHandleType": {
+             "HandleType": 0,
+             "RelRecordChan": [
+               1,
+               0,
+               0,
+               0,
+               0,
+               0,
+               0,
+               0
+             ],
+             "RelPreviewChan": [
+               0,
+               0,
+               0,
+               0,
+               0,
+               0,
+               0,
+               0
+             ],
+             "RelSnapChan": [
+               0,
+               0,
+               0,
+               0,
+               0,
+               0,
+               0,
+               0
+             ],
+             "PTZ": {
+               "PresetEnable": [
+                 0,
+                 1,
+                 0,
+                 0,
+                 0,
+                 0,
+                 0,
+                 0,
+                 0,
+                 0,
+                 0,
+                 0,
+                 0,
+                 0,
+                 0,
+                 0
+               ],
+               "PresetNo": [
+                 0,
+                 4,
+                 0,
+                 0,
+                 0,
+                 0,
+                 0,
+                 0,
+                 0,
+                 0,
+                 0,
+                 0,
+                 0,
+                 0,
+                 0,
+                 0
+               ],
+               "CruiseEnable": [
+                 1,
+                 1,
+                 0,
+                 0,
+                 0,
+                 0,
+                 0,
+                 0,
+                 0,
+                 0,
+                 0,
+                 0,
+                 0,
+                 0,
+                 0,
+                 0
+               ],
+               "CruiseENo": [
+                 2,
+                 4,
+                 0,
+                 0,
+                 0,
+                 0,
+                 0,
+                 0,
+                 0,
+                 0,
+                 0,
+                 0,
+                 0,
+                 0,
+                 0,
+                 0
+               ],
+               "TrackEnable": [
+                 0,
+                 1,
+                 0,
+                 0,
+                 0,
+                 0,
+                 0,
+                 0,
+                 0,
+                 0,
+                 0,
+                 0,
+                 0,
+                 0,
+                 0,
+                 0
+               ],
+               "TrackNo": [
+                 0,
+                 4,
+                 0,
+                 0,
+                 0,
+                 0,
+                 0,
+                 0,
+                 0,
+                 0,
+                 0,
+                 0,
+                 0,
+                 0,
+                 0,
+                 0
+               ]
+             }
+           }
+         }
+       }
+     },
+
+    {
+         "Desc" : {
+              "FirDesc" : "智能检测",
+             "SubDesc" : "电动车检测",
+             "ThiDesc" : "获取电动车检测参数"
+         },
+         "Command":"frmEBikeCfg",
+         "Content": {
+            "Type":	0,
+            "Ch": 1,
+            "Data":{
+            }
+        }
+    },
+     {
+       "Desc": {
+                 "FirDesc" : "智能检测",
+				 "SubDesc" : "电动车检测",
+				 "ThiDesc" : "设置电动车检测参数"
+			 },
+       "Command":"frmEBikeCfg",
+           "Content": {
+                "Type": 1,
+                "Ch": 1,
+             "Data": {
+
+         }
+       }
+     },
+
+     {
+         "Desc" : {
+              "FirDesc" : "智能检测",
+             "SubDesc" : "人员逗留检测",
+             "ThiDesc" : "获取人员逗留检测参数"
+         },
+         "Command":"frmPersonStaying",
+         "Content": {
+            "Type":	0,
+            "Ch": 1,
+            "Data":{
+            }
+        }
+    },
+     {
+       "Desc": {
+                 "FirDesc" : "智能检测",
+				 "SubDesc" : "人员逗留检测",
+				 "ThiDesc" : "设置人员逗留检测参数"
+			 },
+       "Command":"frmPersonStaying",
+           "Content": {
+                "Type": 1,
+                "Ch": 1,
+             "Data": {
+
+         }
+       }
+     },
+
+    {
+         "Desc" : {
+              "FirDesc" : "智能检测",
+             "SubDesc" : "区域入侵检测",
+             "ThiDesc" : "获取区域入侵检测参数"
+         },
+         "Command":"frmRegionalInvasion",
+         "Content": {
+            "Type":	0,
+            "Ch": 1,
+            "Data":{
+            }
+        }
+    },
+     {
+       "Desc": {
+                 "FirDesc" : "智能检测",
+				 "SubDesc" : "区域入侵检测",
+				 "ThiDesc" : "设置区域入侵检测参数"
+			 },
+       "Command":"frmRegionalInvasion",
+           "Content": {
+                "Type": 1,
+                "Ch": 1,
+             "Data": {
+
+         }
+       }
+     },
+
+    {
+         "Desc" : {
+              "FirDesc" : "智能检测",
+             "SubDesc" : "车辆违停检测",
+             "ThiDesc" : "获取车辆违停检测参数"
+         },
+         "Command":"frmParkingViolation",
+         "Content": {
+            "Type":	0,
+            "Ch": 1,
+            "Data":{
+            }
+        }
+    },
+     {
+       "Desc": {
+                 "FirDesc" : "智能检测",
+				 "SubDesc" : "车辆违停检测",
+				 "ThiDesc" : "设置车辆违停检测参数"
+			 },
+       "Command":"frmParkingViolation",
+           "Content": {
+                "Type": 1,
+                "Ch": 1,
+             "Data": {
+
+         }
+       }
+     },
+    {
+         "Desc" : {
+              "FirDesc" : "智能检测",
+             "SubDesc" : "警戒机移动侦测",
+             "ThiDesc" : "获取警戒机移动侦测"
+         },
+         "Command":"frmMotionDetect_V2",
+         "Content": {
+            "Type":	0,
+            "Ch": 1,
+            "Data":{
+            }
+        }
+    },
+     {
+       "Desc": {
+                 "FirDesc" : "智能检测",
+				 "SubDesc" : "警戒机移动侦测",
+				 "ThiDesc" : "设置警戒机移动侦测"
+			 },
+       "Command":"frmMotionDetect_V2",
+           "Content": {
+                "Type": 1,
+                "Ch": 1,
+             "Data": {
+
+         }
+       }
+     },
+ {
+         "Desc" : {
+              "FirDesc" : "智能检测",
+             "SubDesc" : "警戒机视频遮挡",
+             "ThiDesc" : "获取警戒机视频遮挡"
+         },
+         "Command":"frmVideoHide_V2",
+         "Content": {
+            "Type":	0,
+            "Ch": 1,
+            "Data":{
+            }
+        }
+    },
+     {
+       "Desc": {
+                 "FirDesc" : "智能检测",
+				 "SubDesc" : "警戒机视频遮挡",
+				 "ThiDesc" : "设置警戒机视频遮挡"
+			 },
+       "Command":"frmVideoHide_V2",
+           "Content": {
+                "Type": 1,
+                "Ch": 1,
+             "Data": {
+
+         }
+       }
+     },
+         {
+         "Desc" : {
+              "FirDesc" : "智能检测",
+             "SubDesc" : "自定义语音语音",
+             "ThiDesc" : "自定义语音语音"
+         },
+         "Command":"frmSetCustomAudio",
+         "Content": {
+            "Type":	1,
+            "Ch": 1,
+            "Data":{
+              "DetectType":6,
+              "AudioDataType" : 2,
+              "AudioData": " "
+            }
+        }
+    },
+     {
+       "Desc": {
+                 "FirDesc" : "智能检测",
+				 "SubDesc" : "语音试听",
+				 "ThiDesc" : "语音试听"
+			 },
+       "Command":"frmAudioSpeech",
+           "Content": {
+                "Type": 1,
+                "Ch": 1,
+             "Data": {
+                "DetectType" : 6,
+                "AudioSelected" : 1
+             }
+       }
+     },
+     {
+       "Desc": {
+                 "FirDesc" : "智能检测",
+				 "SubDesc" : "设备能力集",
+				 "ThiDesc" : "设备常规事件能力集"
+			 },
+       "Command":"frmCommonEventAbility",
+           "Content": {
+                "Type": 0,
+                "Ch": 1,
+             "Data": {
+
+             }
+       }
+     },
+      {
+       "Desc": {
+                 "FirDesc" : "智能检测",
+				 "SubDesc" : "设备能力集",
+				 "ThiDesc" : "设备智能能力集"
+			 },
+       "Command":"frmGetSmartAbility",
+           "Content": {
+                "Type": 0,
+                "Ch": 1,
+             "Data": {
+
+             }
+       }
+     }
+   ]
+}
