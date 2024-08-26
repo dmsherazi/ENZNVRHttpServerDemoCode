@@ -6,7 +6,7 @@ class uiPic2Base64Dialog(QtWidgets.QDialog):
     def __init__(self):
         QtWidgets.QDialog.__init__(self)
         self.resize(900, 500)
-        self.setWindowTitle('图片转Base64码')
+        self.setWindowTitle('Image to Base64 code')
 
     def setupUi(self):
         self.globalLayout = QtWidgets.QHBoxLayout(self)
@@ -17,17 +17,17 @@ class uiPic2Base64Dialog(QtWidgets.QDialog):
         self.picLabel = QtWidgets.QLabel()
         self.picLabel.setScaledContents(True)
         self.picLabel.setFrameShape(QtWidgets.QFrame.Box)
-        self.picLabel.setText("无图片")
+        elf.picLabel.setText("No picture")
         self.picLabel.setFixedSize(400, 500)
 
         self.leftBottomWidget = QtWidgets.QWidget()
         self.leftBottomHLayout = QtWidgets.QHBoxLayout(self.leftBottomWidget)
 
         self.openPicBtn = QtWidgets.QPushButton()
-        self.openPicBtn.setText("打开图片")
+        self.openPicBtn.setText("Open picture")
         self.openPicBtn.clicked.connect(self.slotOpenPicBtnClicked)
         self.savePicBtn = QtWidgets.QPushButton()
-        self.savePicBtn.setText("保存图片")
+        self.savePicBtn.setText("Save picture")
         self.savePicBtn.clicked.connect(self.slotSavePicBtnClicked)
 
         self.leftBottomHLayout.addWidget(self.openPicBtn)
@@ -61,7 +61,7 @@ class uiPic2Base64Dialog(QtWidgets.QDialog):
         self.rightBottomHLayout = QtWidgets.QHBoxLayout(self.rightBottomWidget)
 
         self.clearTextBtn = QtWidgets.QPushButton()
-        self.clearTextBtn.setText("清空")
+        self.clearTextBtn.setText("clear")
         self.clearTextBtn.clicked.connect(self.slotClearTextBtnClicked)
 
         self.rightBottomHLayout.addWidget(self.clearTextBtn)

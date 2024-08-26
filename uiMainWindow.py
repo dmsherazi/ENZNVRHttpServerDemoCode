@@ -53,7 +53,7 @@ class Ui_MainWindow(object):
 
         self.portLabel = QtWidgets.QLabel()
         self.portLabel.setFixedWidth(100)
-        self.portLabel.setText("端口")
+        self.portLabel.setText("Port")
         self.portSpinBox = QtWidgets.QSpinBox()
         self.portSpinBox.setFixedWidth(100)
         self.portSpinBox.setValue(g_port)
@@ -61,14 +61,14 @@ class Ui_MainWindow(object):
 
         self.userNameLabel = QtWidgets.QLabel()
         self.userNameLabel.setFixedWidth(100)
-        self.userNameLabel.setText("用户名")
+        self.userNameLabel.setText("Username")
         self.userNameLineEdit = QtWidgets.QLineEdit()
         self.userNameLineEdit.setFixedWidth(200)
         self.userNameLineEdit.setText(g_username)
 
         self.passwordLabel = QtWidgets.QLabel()
         self.passwordLabel.setFixedWidth(100)
-        self.passwordLabel.setText("密码")
+        self.passwordLabel.setText("Password")
         self.passwordLineEdit = QtWidgets.QLineEdit()
         self.passwordLineEdit.setFixedWidth(200)
         self.passwordLineEdit.setText(g_password)
@@ -77,11 +77,11 @@ class Ui_MainWindow(object):
         self.deviceListCombo.setFixedSize(300, 25)
         self.deviceListCombo.currentIndexChanged.connect(self.slotdeviceListComboChanged)
         self.deviceListRefreshBtn = QtWidgets.QPushButton()
-        self.deviceListRefreshBtn.setText("刷新")
+        self.deviceListRefreshBtn.setText("Refresh")
         self.deviceListRefreshBtn.clicked.connect(self.slotDeviceRefreshBtnClicked)
 
         self.picToBase64hBtn = QtWidgets.QPushButton()
-        self.picToBase64hBtn.setText("图片转Base64")
+        self.picToBase64hBtn.setText("Image to Base64")
         self.picToBase64hBtn.clicked.connect(self.slotPicToBase64BtnClicked)
 
         self.deviceGridLayout.addWidget(self.ipAddrLabel, 0, 0, 1, 1)
@@ -94,16 +94,16 @@ class Ui_MainWindow(object):
         self.deviceGridLayout.addWidget(self.passwordLineEdit, 0, 7, 1, 1)
         self.deviceGridLayout.addWidget(self.picToBase64hBtn, 0, 8, 1, 1)
 
-        #下面的交互位置的代码
+        # Interaction layout code below
         self.contentLayout = QtWidgets.QHBoxLayout()
         self.contentLayout.setSpacing(20)
         self.contentLayout.setContentsMargins(0, 0, 0, 0)
-        #树控件
+        # Tree widget
         self.cmdTreeWidget = QtWidgets.QTreeWidget()
         self.cmdTreeWidget.setFixedWidth(300)
         self.cmdTreeWidget.setColumnCount(1)
         self.cmdTreeWidget.clicked.connect(self.slotCmdTreeItemClicked)
-        #两个文本框
+        # Two text boxes
         self.configAreaLayout = QtWidgets.QVBoxLayout()
         self.textAreaLayout = QtWidgets.QHBoxLayout()
         self.buttonLayout = QtWidgets.QHBoxLayout()
@@ -161,9 +161,10 @@ class Ui_MainWindow(object):
     def retranslateUi(self, MainWindow):
         _translate = QtCore.QCoreApplication.translate
         MainWindow.setWindowTitle(_translate("MainWindow", "MainWindow"))
-        self.sendAreaLabel.setText(_translate("MainWindow", "发送语义"))
-        self.recieveAreaLabel.setText(_translate("MainWindow", "接收语义"))
-        self.sendJsonButton.setText(_translate("MainWindow", "发送"))
+        self.sendAreaLabel.setText(_translate("MainWindow", "Send Semantics"))
+        self.recieveAreaLabel.setText(_translate("MainWindow", "Receive Semantics"))
+        self.sendJsonButton.setText(_translate("MainWindow", "Send"))
+
 
     def setUiStyle(self):
         pass
@@ -180,8 +181,8 @@ class Ui_MainWindow(object):
                     arrayList = json.load(fd)
                 except Exception as e:
                     self.sendAreaTextEdit.setTextColor(QtGui.QColor(255, 0, 0))
-                    self.sendAreaTextEdit.append("文件：" + file)
-                    self.sendAreaTextEdit.append("Json格式错误：\n" + str(e))
+                    self.sendAreaTextEdit.append("File: " + file)
+                    self.sendAreaTextEdit.append("Json Format Error:\n" + str(e))
                     self.sendAreaTextEdit.append("\n")
                     continue;
 
@@ -271,16 +272,16 @@ class Ui_MainWindow(object):
         print("send json button clicked.")
         ipaddr = self.ipAddrLineEdit.text()
         if len(ipaddr) == 0 :
-            self.uidialog("请输入iP地址")
+            self.uidialog("Please enter the IP address")
             return False
         port = self.portSpinBox.value()
 
         if port == 0 :
-            self.uidialog("请输入合法端口")
+            self.uidialog("Please enter a valid port")
             return False
         username = self.userNameLineEdit.text()
         if len(username) == 0:
-            self.uidialog("请输入用户名")
+            self.uidialog("Please enter your username")
             return False
 
         password = self.passwordLineEdit.text()
@@ -302,11 +303,11 @@ class Ui_MainWindow(object):
             return False
 
         self.recieveAreaTextEdit.clear()
-        self.recieveAreaTextEdit.setText("等待接收数据...")
+        self.recieveAreaTextEdit.setText("Waiting to receive data...")
         print(json.dumps(cmd_data))
         success = http_base.send_http_request(username, password, ipaddr, port, cmd, json.dumps(cmd_data))
         if success == False :
-            self.uidialog("发送失败")
+            self.uidialog("Send failed")
             return False
 
 
@@ -314,7 +315,7 @@ class Ui_MainWindow(object):
     def slotSendTestBtnClicked(self):
         print("send json button clicked.11111")
         self.recieveAreaTextEdit.clear()
-        self.recieveAreaTextEdit.setText("等待接收数据...")
+        self.recieveAreaTextEdit.setText("Waiting to receive data...")
         cmd_str = json.dumps(data_cmd)
         print(cmd_str)
         #http_base.send_http_request('admin','888888','10.8.0.198','80', 'frmUserLogin', cmd_str)

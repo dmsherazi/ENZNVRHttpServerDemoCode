@@ -20,8 +20,7 @@ class mainWindow(QtWidgets.QMainWindow):
         """
         self.ui.textEditRecieveJson.setReadOnly(True)
         self.ui.sendButton.clicked.connect(self.sendButtonClicked)
-        # 给button 的 点击动作绑定一个事件处理函数
-        """
+        # Bind an event handler to the button's click action        """
             
     """def sendButtonClicked(self):
         self.ui.textEditRecieveJson.setText(self.ui.textEditSendJson.toPlainText())

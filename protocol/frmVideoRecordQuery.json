@@ -1,178 +1,155 @@
 {
-   "Array" :
-   [
- 		{
-			 "Desc" : {
-				 "FirDesc" : "回放",
-				 "SubDesc" : "获取回放通道信息"
-
-			 },
-			 "Command":"frmGetPlaybackInfo",
-			 "Content": {
-				"Type":	0,
-				"Ch": 0,
-				"Data":{}
-			}
-		},
-
-	   {
-         	"Desc" : {
-            	"FirDesc" : "回放",
-            	"SubDesc" : "录像查询"
-         	},
-		    "Command":"frmVideoRecordsQuery",
-         	"Content": {
-			"Type":	0,
-			"Ch": 1,
-			 "Data": {
-				 "Channels": [1],
-				 "QueryType": 0,
-				 "BeginDateTime": 1574158320,
-				  "EndDateTime": 1574159400,
-                 "QueryCondition": 0
-             }
-		}
-      },
-     {
-			 "Desc" : {
-				 "FirDesc" : "回放",
-				 "SubDesc" : "录像查询V2 （返回录像文件路径）"
-
-			 },
-			 "Command":"frmVideoRecordsQueryByTime",
-			 "Content": {
-				"Type":	0,
-				"Ch": 2,
-				"Data":{
-                  "Channels": [1],
-				  "QueryType": 1,
-				 "BeginDateTime": 1574158320,
-				  "EndDateTime": 1574159400,
-                 "QueryCondition": 0
+    "Array": [
+        {
+            "Desc": {
+                "FirDesc": "Playback",
+                "SubDesc": "Get playback channel information"
+            },
+            "Command": "frmGetPlaybackInfo",
+            "Content": {
+                "Type": 0,
+                "Ch": 0,
+                "Data": {}
+            }
+        },
+        {
+            "Desc": {
+                "FirDesc": "Playback",
+                "SubDesc": "Video Query"
+            },
+            "Command": "frmVideoRecordsQuery",
+            "Content": {
+                "Type": 0,
+                "Ch": 1,
+                "Data": {
+                    "Channels": [
+                        1
+                    ],
+                    "QueryType": 0,
+                    "BeginDateTime": 1574158320,
+                    "EndDateTime": 1574159400,
+                    "QueryCondition": 0
                 }
-			}
-		},
-      {
-			 "Desc" : {
-				 "FirDesc" : "回放",
-				 "SubDesc" : "按月查询录像"
-
-			 },
-			 "Command":"frmVideoQueryByMonth",
-			 "Content": {
-				"Type":	0,
-               "Ch": 1,
-				"Data":{
-                  "StartYear": 2019,
-				  "StartMonth": 11
-
+            }
+        },
+        {
+            "Desc": {
+                "FirDesc": "Playback",
+                "SubDesc": "Video query V2 (return video file path)"
+            },
+            "Command": "frmVideoRecordsQueryByTime",
+            "Content": {
+                "Type": 0,
+                "Ch": 2,
+                "Data": {
+                    "Channels": [
+                        1
+                    ],
+                    "QueryType": 1,
+                    "BeginDateTime": 1574158320,
+                    "EndDateTime": 1574159400,
+                    "QueryCondition": 0
                 }
-			}
-		},
-
-	   	   {
-	   			 "Desc" : {
-				 "FirDesc" : "通道连接",
-				 "SubDesc" : "获取协议能力集"
-
-			 },
-			 "Command":"frmDevProtocalCap",
-			 "Content": {
-				"Type":	0,
-				"Ch": 1,
-				"Data":{
+            }
+        },
+        {
+            "Desc": {
+                "FirDesc": "Playback",
+                "SubDesc": "Query videos by month"
+            },
+            "Command": "frmVideoQueryByMonth",
+            "Content": {
+                "Type": 0,
+                "Ch": 1,
+                "Data": {
+                    "StartYear": 2019,
+                    "StartMonth": 11
                 }
-			}
-		},
-
-  {
-			 "Desc" : {
-				 "FirDesc" : "通道连接",
-				 "SubDesc" : "获取所有ip通道信息"
-
-			 },
-			 "Command":"frmNetDevCFG",
-			 "Content": {
-				"Type":	0,
-				"Ch": 1,
-				"Data":{
-                }
-			}
-		},
-      {
-			 "Desc" : {
-				 "FirDesc" : "通道连接",
-				 "SubDesc" : "设置所有ip通道信息"
-
-			 },
-			 "Command":"frmNetDevCFG",
-			 "Content": {
-				"Type":	1,
-               "Ch": 1,
-				"Data":{
-
-                }
-			}
-		},
-
-	   {
-	   			 "Desc" : {
-				 "FirDesc" : "通道连接",
-				 "SubDesc" : "获取所有ip通道信息"
-
-			 },
-			 "Command":"frmNetDevCFG",
-			 "Content": {
-				"Type":	0,
-				"Ch": 1,
-				"Data":{
-                }
-			}
-		},
-      {
-			 "Desc" : {
-				 "FirDesc" : "通道连接",
-				 "SubDesc" : "设置所有ip通道信息"
-
-			 },
-			 "Command":"frmNetDevCfg",
-			 "Content": {
-				"Type":	1,
-               "Ch": 1,
-				"Data":{
-
-                }
-			}
-		},
-
-	   {
-	   			 "Desc" : {
-				 "FirDesc" : "通道连接",
-				 "SubDesc" : "获取单个ip通道信息"
-
-			 },
-			 "Command":"frmNetDevCFG",
-			 "Content": {
-				"Type":	2,
-				"Ch": 1,
-				"Data":{
-                }
-			}
-		},
-      {
-			 "Desc" : {
-				 "FirDesc" : "通道连接",
-				 "SubDesc" : "设置单个ip通道信息"
-
-			 },
-			 "Command":"frmNetDevCfg",
-			 "Content": {
-				"Type":	3,
-               "Ch": 1,
-				"Data":{
-
-                }
-			}
-		}
-   ]
+            }
+        },
+        {
+            "Desc": {
+                "FirDesc": "Channel Connection",
+                "SubDesc": "Get protocol capability set"
+            },
+            "Command": "frmDevProtocalCap",
+            "Content": {
+                "Type": 0,
+                "Ch": 1,
+                "Data": {}
+            }
+        },
+        {
+            "Desc": {
+                "FirDesc": "Channel Connection",
+                "SubDesc": "Get all ip channel information"
+            },
+            "Command": "frmNetDevCFG",
+            "Content": {
+                "Type": 0,
+                "Ch": 1,
+                "Data": {}
+            }
+        },
+        {
+            "Desc": {
+                "FirDesc": "Channel Connection",
+                "SubDesc": "Set all ip channel information"
+            },
+            "Command": "frmNetDevCFG",
+            "Content": {
+                "Type": 1,
+                "Ch": 1,
+                "Data": {}
+            }
+        },
+        {
+            "Desc": {
+                "FirDesc": "Channel Connection",
+                "SubDesc": "Get all ip channel information"
+            },
+            "Command": "frmNetDevCFG",
+            "Content": {
+                "Type": 0,
+                "Ch": 1,
+                "Data": {}
+            }
+        },
+        {
+            "Desc": {
+                "FirDesc": "Channel Connection",
+                "SubDesc": "Set all ip channel information"
+            },
+            "Command": "frmNetDevCfg",
+            "Content": {
+                "Type": 1,
+                "Ch": 1,
+                "Data": {}
+            }
+        },
+        {
+            "Desc": {
+                "FirDesc": "Channel Connection",
+                "SubDesc": "Get single ip channel information"
+            },
+            "Command": "frmNetDevCFG",
+            "Content": {
+                "Type": 2,
+                "Ch": 1,
+                "Data": {}
+            }
+        },
+        {
+            "Desc": {
+                "FirDesc": "Channel Connection",
+                "SubDesc": "Set single ip channel information"
+            },
+            "Command": "frmNetDevCfg",
+            "Content": {
+                "Type": 3,
+                "Ch": 1,
+                "Data": {}
+            }
+        }
+    ]
 }

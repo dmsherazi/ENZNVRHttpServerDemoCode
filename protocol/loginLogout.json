@@ -1,18 +1,16 @@
 {
-   "Array" : [
-
-	  {
-         "Desc" : {
-            "FirDesc" : "登录和登出",
-            "SubDesc" : "登出"
-         },
-         "Command" : "frmUserLogout",
-         "Content" : {
-			"Type":	0,
-			"Ch": 1,
-			"Data":{}
-		}
-
-      }
-   ]
+    "Array": [
+        {
+            "Desc": {
+                "FirDesc": "Login and Logout",
+                "SubDesc": "Sign out"
+            },
+            "Command": "frmUserLogout",
+            "Content": {
+                "Type": 0,
+                "Ch": 1,
+                "Data": {}
+            }
+        }
+    ]
 }

@@ -1,240 +1,221 @@
 {
-   "Array" :
-   [
- 		{
-			 "Desc" : {
-				 "FirDesc" : "系统管理",
-				 "SubDesc" : "升级",
-				 "ThiDesc" : "获取升级信息"
-
-			 },
-			 "Command":"frmSysUpdate",
-			 "Content": {
-				"Type":	0,
-				"Ch": 1,
-				"Data":{}
-			}
-		},
-
-	  {
-			 "Desc" : {
-				 "FirDesc" : "系统管理",
-				 "SubDesc" : "升级",
-				 "ThiDesc" : "上传文件并升级"
-
-			 },
-			 "Command":"upldForm",
-			 "Content": {
-				"Type":	0,
-				"Ch": 1,
-				"Data":{}
-			}
-		},
-
-	   {
-			 "Desc" : {
-				 "FirDesc" : "系统管理",
-				 "SubDesc" : "升级",
-				 "ThiDesc" : "开始升级"
-
-			 },
-			 "Command":"frmStartUpdate",
-			 "Content": {
-				"Type":	0,
-				"Ch": 1,
-				"Data":{
-					"port":30000,
-					"updateName":"/tmp/update_ln/tuya_pack.update"
-				}
-			}
-		},
-
-	   {
-			 "Desc" : {
-				 "FirDesc" : "系统管理",
-				 "SubDesc" : "升级",
-				 "ThiDesc" : "获取升级进度"
-
-			 },
-			 "Command":"GetProgress",
-			 "Content": {
-				"Type":	0,
-				"Ch": 1,
-				"Data":{
-					"FileSize":"63187968"
-				}
-			}
-		},
-
-	   {
-			 "Desc" : {
-				 "FirDesc" : "系统管理",
-				 "SubDesc" : "升级",
-				 "ThiDesc" : "获取升级信息"
-
-			 },
-			 "Command":"frmSysUpdate",
-			 "Content": {
-				"Type":	0,
-				"Ch": 1,
-				"Data":{}
-			}
-		},
-
-	   {
-			 "Desc" : {
-				 "FirDesc" : "系统管理",
-				 "SubDesc" : "升级",
-				 "ThiDesc" : "上传文件并升级"
-
-			 },
-			 "Command":"upldForm",
-			 "Content": {
-				"Type":	0,
-				"Ch": 1,
-				"Data":{}
-			}
-		},
-
-	   {
-			 "Desc" : {
-				 "FirDesc" : "系统管理",
-				 "SubDesc" : "自动维护",
-				 "ThiDesc" : "获取自动维护"
-
-			 },
-			 "Command":"frmAutoReboot",
-			 "Content": {
-				"Type":	0,
-				"Ch": 1,
-				"Data":{}
-			}
-		},
-
-	   {
-			 "Desc" : {
-				 "FirDesc" : "系统管理",
-				 "SubDesc" : "自动维护",
-				 "ThiDesc" : "(1)禁用"
-
-			 },
-			 "Command":"frmAutoReboot",
-			 "Content": {
-				"Type":	1,
-				"Ch": 1,
-				"Data":{
-					"AutoRebootMode": 0
-				}
-			}
-		},
-
-	   {
-			 "Desc" : {
-				 "FirDesc" : "系统管理",
-				 "SubDesc" : "自动维护",
-				 "ThiDesc" : "(2)单次"
-
-			 },
-			 "Command":"frmAutoReboot",
-			 "Content": {
-				"Type":	1,
-				"Ch": 1,
-				"Data":{
-					"AutoRebootMode": 1,
-					"DateTime": [1970,1,1,12,14,0]
-				}
-			}
-		},
-
-	   {
-			 "Desc" : {
-				 "FirDesc" : "系统管理",
-				 "SubDesc" : "自动维护",
-				 "ThiDesc" : "(3)每天"
-
-			 },
-			 "Command":"frmAutoReboot",
-			 "Content": {
-				"Type":	1,
-				"Ch": 1,
-				"Data":{
-					"AutoRebootMode": 2,
-					"EveryDayTime": 4623
-				}
-			}
-		},
-
-	   {
-			 "Desc" : {
-				 "FirDesc" : "系统管理",
-				 "SubDesc" : "自动维护",
-				 "ThiDesc" : "(4)每周"
-
-			 },
-			 "Command":"frmAutoReboot",
-			 "Content": {
-				"Type":	1,
-				"Ch": 1,
-				"Data":{
-					"AutoRebootMode": 3,
-					"Week": [
-						{
-							"Enable": 1,
-							"Time": 45
-						}
-					]
-				}
-			}
-		},
-
-	   {
-			 "Desc" : {
-				 "FirDesc" : "系统管理",
-				 "SubDesc" : "码流信息",
-				 "ThiDesc" : "获取码流信息"
-
-			 },
-			 "Command":"frmBitRate",
-			 "Content": {
-				"Type":	0,
-				"Ch": 1,
-				"Data":{}
-			}
-		},
-		
-	   {
-			 "Desc" : {
-				 "FirDesc" : "系统管理",
-				 "SubDesc" : "重启"
-			 },
-			 "Command":"frmDeviceReboot",
-			 "Content": {
-				"Type":	0,
-				"Ch": 1,
-				"Data":{}
-			}
-		},
-
-	   {
-			 "Desc" : {
-				 "FirDesc" : "系统管理",
-				 "SubDesc" : "配置恢复默认"
-			 },
-			 "Command":"frmSysConfigRestore",
-			 "Content": {
-				"Type":	0,
-				"Ch": 1,
-				"Data":{
-					"Network": 1,
-					"Alarn": 1,
-					"RecordCfg": 1,
-					"SystemCfg": 1,
-					"ChannelCfg": 1,
-					"EventCfg": 1,
-					"HdCfg": 1,
-					"UserCfg": 1
-				}
-			}
-		}
-   ]
+    "Array": [
+        {
+            "Desc": {
+                "FirDesc": "System Management",
+                "SubDesc": "upgrade",
+                "ThiDesc": "Get upgrade information"
+            },
+            "Command": "frmSysUpdate",
+            "Content": {
+                "Type": 0,
+                "Ch": 1,
+                "Data": {}
+            }
+        },
+        {
+            "Desc": {
+                "FirDesc": "System Management",
+                "SubDesc": "upgrade",
+                "ThiDesc": "Upload files and upgrade"
+            },
+            "Command": "upldForm",
+            "Content": {
+                "Type": 0,
+                "Ch": 1,
+                "Data": {}
+            }
+        },
+        {
+            "Desc": {
+                "FirDesc": "System Management",
+                "SubDesc": "upgrade",
+                "ThiDesc": "Start Upgrading"
+            },
+            "Command": "frmStartUpdate",
+            "Content": {
+                "Type": 0,
+                "Ch": 1,
+                "Data": {
+                    "port": 30000,
+                    "updateName": "/tmp/update_ln/tuya_pack.update"
+                }
+            }
+        },
+        {
+            "Desc": {
+                "FirDesc": "System Management",
+                "SubDesc": "upgrade",
+                "ThiDesc": "Get upgrade progress"
+            },
+            "Command": "GetProgress",
+            "Content": {
+                "Type": 0,
+                "Ch": 1,
+                "Data": {
+                    "FileSize": "63187968"
+                }
+            }
+        },
+        {
+            "Desc": {
+                "FirDesc": "System Management",
+                "SubDesc": "upgrade",
+                "ThiDesc": "Get upgrade information"
+            },
+            "Command": "frmSysUpdate",
+            "Content": {
+                "Type": 0,
+                "Ch": 1,
+                "Data": {}
+            }
+        },
+        {
+            "Desc": {
+                "FirDesc": "System Management",
+                "SubDesc": "upgrade",
+                "ThiDesc": "Upload files and upgrade"
+            },
+            "Command": "upldForm",
+            "Content": {
+                "Type": 0,
+                "Ch": 1,
+                "Data": {}
+            }
+        },
+        {
+            "Desc": {
+                "FirDesc": "System Management",
+                "SubDesc": "Automatic maintenance",
+                "ThiDesc": "Get automatic maintenance"
+            },
+            "Command": "frmAutoReboot",
+            "Content": {
+                "Type": 0,
+                "Ch": 1,
+                "Data": {}
+            }
+        },
+        {
+            "Desc": {
+                "FirDesc": "System Management",
+                "SubDesc": "Automatic maintenance",
+                "ThiDesc": "(1) Disable"
+            },
+            "Command": "frmAutoReboot",
+            "Content": {
+                "Type": 1,
+                "Ch": 1,
+                "Data": {
+                    "AutoRebootMode": 0
+                }
+            }
+        },
+        {
+            "Desc": {
+                "FirDesc": "System Management",
+                "SubDesc": "Automatic maintenance",
+                "ThiDesc": "(2) Single"
+            },
+            "Command": "frmAutoReboot",
+            "Content": {
+                "Type": 1,
+                "Ch": 1,
+                "Data": {
+                    "AutoRebootMode": 1,
+                    "DateTime": [
+                        1970,
+                        1,
+                        1,
+                        12,
+                        14,
+                        0
+                    ]
+                }
+            }
+        },
+        {
+            "Desc": {
+                "FirDesc": "System Management",
+                "SubDesc": "Automatic maintenance",
+                "ThiDesc": "(3) Every day"
+            },
+            "Command": "frmAutoReboot",
+            "Content": {
+                "Type": 1,
+                "Ch": 1,
+                "Data": {
+                    "AutoRebootMode": 2,
+                    "EveryDayTime": 4623
+                }
+            }
+        },
+        {
+            "Desc": {
+                "FirDesc": "System Management",
+                "SubDesc": "Automatic maintenance",
+                "ThiDesc": "(4) Weekly"
+            },
+            "Command": "frmAutoReboot",
+            "Content": {
+                "Type": 1,
+                "Ch": 1,
+                "Data": {
+                    "AutoRebootMode": 3,
+                    "Week": [
+                        {
+                            "Enable": 1,
+                            "Time": 45
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "Desc": {
+                "FirDesc": "System Management",
+                "SubDesc": "Stream information",
+                "ThiDesc": "Get stream information"
+            },
+            "Command": "frmBitRate",
+            "Content": {
+                "Type": 0,
+                "Ch": 1,
+                "Data": {}
+            }
+        },
+        {
+            "Desc": {
+                "FirDesc": "System Management",
+                "SubDesc": "Restart"
+            },
+            "Command": "frmDeviceReboot",
+            "Content": {
+                "Type": 0,
+                "Ch": 1,
+                "Data": {}
+            }
+        },
+        {
+            "Desc": {
+                "FirDesc": "System Management",
+                "SubDesc": "Configuration restore default"
+            },
+            "Command": "frmSysConfigRestore",
+            "Content": {
+                "Type": 0,
+                "Ch": 1,
+                "Data": {
+                    "Network": 1,
+                    "Alarn": 1,
+                    "RecordCfg": 1,
+                    "SystemCfg": 1,
+                    "ChannelCfg": 1,
+                    "EventCfg": 1,
+                    "HdCfg": 1,
+                    "UserCfg": 1
+                }
+            }
+        }
+    ]
 }
